@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="author" content="NeStudio">
+  <meta name="description" content="Официальный сайт КУП «Кобринхимсервис» (демонстрационная версия). Разработка: NeStudio.">
+  <title>КУП «Кобринхимсервис» – Официальный сайт</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23166534'/><path d='M30 70 L50 25 L70 70 Z' fill='%23ffffff'/></svg>" type="image/svg+xml">
+  <style>
+    
+/* === NeStudio Anti-Copy & IP Protection === */
+body, body *:not(input):not(textarea):not(select):not([contenteditable="true"]) {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+input, textarea, select, [contenteditable="true"] {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+img, svg, a {
+  -webkit-user-drag: none !important;
+  user-drag: none !important;
+}
+@media print {
+  body {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  html::before {
+    content: "Материалы демонстрационного сайта КУП «Кобринхимсервис» защищены авторским правом NeStudio. Печать и копирование запрещены.";
+    display: block !important;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 100px 20px;
+    color: #0f172a;
+  }
+}
+#nestudio-protect-toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: rgba(15, 23, 42, 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #ffffff;
+  padding: 11px 22px;
+  border-radius: 99px;
+  font-size: 13.5px;
+  font-family: var(--font-body, system-ui, -apple-system, sans-serif);
+  font-weight: 500;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28), 0 0 0 1px rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 9999999;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+#nestudio-protect-toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+  </style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: gov-portal frame (utility bar → header → nav) over clean modern municipal style; 1200px column; on phones an app-like shell with drawer menu and a bottom action bar. */
+:root{
+  --field:#166534;--field-2:#15803d;--wheat:#16a34a;--wheat-soft:#f0fdf4;--loam:#334155;
+  --ink:#0f172a;--muted:#475569;--bg:#ffffff;--surface:#ffffff;--surface-2:#f8fafc;--line:#e2e8f0;
+  --flag:#dc2626;--on-field:#ffffff;--focus:#16a34a;
+  --font-display:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-body:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --fs:16px;--radius:10px;--bar-h:0px;
+  color-scheme:light;
+}
+html,body{background-color:#ffffff!important;color:#0f172a!important}
+html.a11y{--radius:0px;--font-display:Arial,Helvetica,sans-serif;--font-body:Arial,Helvetica,sans-serif;font-size:var(--fs)!important}
+html.a11y body{font-size:var(--fs)!important;line-height:1.7!important}
+html.a11y *{font-family:Arial,Helvetica,sans-serif!important}
+html.a11y h1{font-size:2em!important;line-height:1.25!important}
+html.a11y h2{font-size:1.55em!important;line-height:1.3!important}
+html.a11y h3{font-size:1.25em!important;line-height:1.35!important}
+html.a11y p,html.a11y li,html.a11y td,html.a11y th,html.a11y input,html.a11y select,html.a11y textarea,html.a11y button,html.a11y span,html.a11y time,html.a11y dt,html.a11y dd{font-size:1em}
+html.a11y .btn{font-size:1em!important}
+html.a11y.c-bw{--field:#000;--field-2:#000;--wheat:#000;--wheat-soft:#fff;--loam:#000;--ink:#000;--muted:#000;--bg:#fff;--surface:#fff;--surface-2:#fff;--line:#000;--flag:#000;--on-field:#fff;--focus:#000;color-scheme:light}
+html.a11y.c-wb{--field:#fff;--field-2:#fff;--wheat:#fff;--wheat-soft:#000;--loam:#fff;--ink:#fff;--muted:#fff;--bg:#000;--surface:#000;--surface-2:#000;--line:#fff;--flag:#fff;--on-field:#000;--focus:#ff0;color-scheme:dark}
+html.a11y.c-blue{--field:#063462;--field-2:#063462;--wheat:#063462;--wheat-soft:#9dd1ff;--loam:#063462;--ink:#063462;--muted:#063462;--bg:#9dd1ff;--surface:#9dd1ff;--surface-2:#9dd1ff;--line:#063462;--flag:#063462;--on-field:#9dd1ff;--focus:#063462;color-scheme:light}
+html.a11y.c-beige{--field:#4d4b43;--field-2:#4d4b43;--wheat:#4d4b43;--wheat-soft:#f7f3d6;--loam:#4d4b43;--ink:#4d4b43;--muted:#4d4b43;--bg:#f7f3d6;--surface:#f7f3d6;--surface-2:#f7f3d6;--line:#4d4b43;--flag:#4d4b43;--on-field:#f7f3d6;--focus:#4d4b43;color-scheme:light}
+html.a11y.noimg .img{display:none!important}
+html.a11y.ls body{letter-spacing:.12em;word-spacing:.2em}
+
+/* User / Admin view mode */
+body.mode-user .admin-only{display:none!important}
+body.mode-admin .user-only{display:none!important}
+.mode-toggle{display:inline-flex;align-items:center;gap:6px;background:var(--surface-2);border:1px solid var(--line);border-radius:99px;padding:3px 10px;font:600 .8rem var(--font-body);color:var(--ink);cursor:pointer;min-height:32px;transition:all .15s}
+.mode-toggle:hover{background:var(--line)}
+.mode-dot{width:8px;height:8px;border-radius:50%;display:inline-block;background:#16a34a;box-shadow:0 0 0 2px rgba(22,163,74,.25)}
+body.mode-admin .mode-dot{background:#f59e0b;box-shadow:0 0 0 2px rgba(245,158,11,.25)}
+
+[hidden]{display:none!important}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:var(--fs);line-height:1.6;margin:0;padding-bottom:var(--bar-h)}
+a{color:var(--field-2);text-underline-offset:3px}
+html.a11y a{color:var(--ink);text-decoration:underline}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
+h1{font-size:clamp(1.5rem,3.4vw,2.3rem)}
+h2{font-size:clamp(1.2rem,2.2vw,1.55rem)}
+h3{font-size:1.05rem;font-family:var(--font-body);font-weight:700}
+p{margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:16px}
+.eyebrow{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;border:1.5px solid var(--field);background:var(--field);color:var(--on-field);font:600 .95rem var(--font-body);padding:.72em 1.15em;border-radius:var(--radius);cursor:pointer;text-decoration:none;min-height:44px}
+.btn.ghost{background:transparent;color:var(--field-2);border-color:var(--line)}
+.btn.wheat{background:var(--field-2);border-color:var(--field-2);color:#ffffff}
+html.a11y .btn.wheat{color:var(--on-field)}
+.tag{display:inline-block;font-size:.72rem;font-weight:600;padding:.15em .6em;border-radius:99px;background:var(--surface-2);color:var(--muted);border:1px solid var(--line)}
+.img{position:relative;overflow:hidden;background:var(--surface-2)}
+.img svg,.img img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* utility bar */
+.util{background:var(--surface);border-bottom:1px solid var(--line);font-size:.85rem}
+.util .wrap{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;justify-content:space-between;padding-block:8px}
+.util-left{display:flex;gap:16px;flex-wrap:wrap;color:var(--muted)}
+.util-right{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-left:auto}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden}
+.lang button{border:0;background:transparent;color:var(--ink);font:600 .8rem var(--font-body);padding:.35em .85em;cursor:pointer;min-height:32px}
+.lang button[aria-pressed="true"]{background:var(--field);color:var(--on-field)}
+.a11y-btn{border:1px solid var(--line);background:transparent;color:var(--ink);font:600 .8rem var(--font-body);padding:.35em .85em;border-radius:99px;cursor:pointer;display:inline-flex;gap:.4em;align-items:center;min-height:32px}
+.a11y-panel{background:var(--surface-2);border-bottom:2px solid var(--ink)}
+.a11y-panel .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;padding-block:12px;align-items:center}
+.a11y-panel fieldset{border:0;padding:0;margin:0;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.a11y-panel legend{float:left;margin-right:6px;font-weight:700;font-size:.85rem}
+.a11y-panel button{border:2px solid var(--ink);background:var(--surface);color:var(--ink);font:700 .9rem Arial,sans-serif;padding:.25em .7em;cursor:pointer;min-width:2.6em;min-height:40px}
+.a11y-panel button[aria-pressed="true"]{outline:3px solid var(--focus)}
+.sw-bw{background:#fff!important;color:#000!important}.sw-wb{background:#000!important;color:#fff!important}.sw-blue{background:#9dd1ff!important;color:#063462!important}.sw-beige{background:#f7f3d6!important;color:#4d4b43!important}
+
+/* header */
+header.site{background:var(--surface);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;gap:16px;align-items:center;justify-content:space-between;padding-block:14px}
+.brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--ink);min-width:0}
+.brand svg{flex:none}
+.brand-name{font-family:var(--font-display);font-weight:600;font-size:1.22rem;line-height:1.1;display:block}
+.brand-sub{font-size:.8rem;color:var(--muted);line-height:1.3;display:block}
+.search{display:flex;border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--bg);flex:1 1 220px;max-width:340px}
+.search input{border:0;background:transparent;color:var(--ink);font:inherit;font-size:.95rem;padding:.6em .8em;flex:1;min-width:0}
+.search button{border:0;background:transparent;color:var(--muted);padding:0 .8em;cursor:pointer}
+.head-contacts{display:flex;flex-direction:column;font-size:.85rem;text-align:right}
+.head-contacts b{font-size:1.02rem;font-variant-numeric:tabular-nums}
+.head-mobile{display:none;gap:4px}
+.icon-btn{width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;cursor:pointer}
+
+nav.main{background:var(--field);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+html.a11y nav.main{position:static}
+nav.main .links{display:flex;flex-wrap:wrap;gap:2px}
+nav.main a,nav.main .dd>button{color:var(--on-field);text-decoration:none;font:600 .95rem var(--font-body);padding:.85em 1em;display:block;background:transparent;border:0;cursor:pointer}
+nav.main a[aria-current="page"],nav.main .dd.active>button{box-shadow:inset 0 -4px 0 var(--wheat)}
+nav.main a:hover,nav.main .dd>button:hover{background:rgba(255,255,255,.08)}
+nav.main .cta-nav{margin-left:auto;color:var(--wheat)}
+.dd{position:relative}
+.dd-menu{position:absolute;left:0;top:100%;background:var(--surface);border:1px solid var(--line);box-shadow:0 12px 30px rgba(0,0,0,.12);min-width:270px;padding:6px;border-radius:0 0 var(--radius) var(--radius);display:none}
+.dd.open .dd-menu{display:block}
+.dd-menu a{color:var(--ink)!important;padding:.55em .8em!important;border-radius:8px;font-weight:500!important}
+.dd-menu a:hover{background:var(--surface-2)!important}
+
+/* drawer (mobile) */
+.drawer{position:fixed;inset:0;z-index:70;background:var(--bg);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px)}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line)}
+.drawer-body{overflow:auto;padding:8px 16px calc(24px + env(safe-area-inset-bottom,0px));flex:1}
+.drawer-body a.top{display:flex;justify-content:space-between;padding:14px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font:600 1.05rem var(--font-body)}
+.drawer-body details{border-bottom:1px solid var(--line)}
+.drawer-body summary{padding:14px 4px;font:600 1.05rem var(--font-body);cursor:pointer;list-style:none;display:flex;justify-content:space-between}
+.drawer-body summary::after{content:"+";font-size:1.3rem;color:var(--muted)}
+.drawer-body details[open] summary::after{content:"–"}
+.drawer-body details a{display:block;padding:10px 12px;text-decoration:none;color:var(--ink);border-left:3px solid var(--line);margin:0 0 4px 4px}
+.drawer-body details a[aria-current="page"]{border-color:var(--wheat);font-weight:700}
+.drawer-contacts{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px;display:grid;gap:4px;font-size:.92rem}
+
+/* bottom bar (mobile) */
+.bottombar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:45;background:var(--surface);border-top:1px solid var(--line);padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));grid-template-columns:repeat(4,1fr);gap:4px;box-shadow:0 -6px 20px rgba(0,0,0,.08)}
+.bottombar a,.bottombar button{display:flex;flex-direction:column;align-items:center;gap:2px;font:600 .7rem var(--font-body);color:var(--ink);text-decoration:none;background:transparent;border:0;padding:6px 2px;border-radius:10px;cursor:pointer;min-height:48px;justify-content:center}
+.bottombar svg{width:22px;height:22px}
+.bottombar .primary{background:var(--field);color:var(--on-field)}
+
+/* hero */
+.hero{background:var(--field);color:var(--on-field)}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:28px;align-items:center;padding-block:40px}
+.hero h1{color:var(--on-field)}
+.hero p.lead{font-size:1.08rem;opacity:.92;max-width:52ch;margin-top:14px}
+.hero .ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.hero .btn.ghost{color:var(--on-field);border-color:color-mix(in srgb,var(--on-field) 50%,transparent)}
+.hero-art{width:100%;max-width:100%;aspect-ratio:16/10;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.hero-art .cap{position:absolute;left:12px;bottom:12px;background:rgba(15,23,42,.78);color:#ffffff;font-size:.75rem;padding:4px 10px;border-radius:99px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:color-mix(in srgb,var(--on-field) 18%,transparent);border-radius:12px;overflow:hidden;margin-top:26px}
+.stats div{background:var(--field);padding:12px 14px;font-size:.8rem;opacity:.95}
+.stats b{display:block;font-family:var(--font-display);font-size:1.15rem;font-weight:600;color:#86efac}
+html.a11y .stats b{color:var(--on-field)}
+html.a11y .hero{border-bottom:3px solid var(--ink)}
+html.a11y .hero .btn{border-color:var(--on-field);background:transparent;color:var(--on-field)}
+
+/* sections */
+main{padding-block:32px 56px}
+.sec{margin-top:44px}
+.sec:first-child{margin-top:0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.grid{display:grid;gap:20px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:flex;flex-direction:column;gap:8px;min-width:0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.svc{padding:0;overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .2s ease, box-shadow .2s ease}
+.svc:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.1)}
+.svc .img{aspect-ratio:16/10}
+.svc .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.svc .unit{font-size:.8rem;color:var(--loam);font-weight:600;font-variant-numeric:tabular-nums;margin-top:auto}
+.svc p{color:var(--muted);font-size:.92rem}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:st}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;position:relative}
+.step b.n{font-family:var(--font-display);font-size:1.6rem;color:var(--field-2);display:block;line-height:1}
+html.a11y .step b.n{color:var(--ink)}
+.step h3{margin:8px 0 4px}
+.step p{font-size:.92rem;color:var(--muted)}
+
+/* calendar */
+.cal{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;overflow-x:auto}
+.cal-row{display:grid;grid-template-columns:repeat(12,minmax(54px,1fr));gap:4px;min-width:680px}
+.cal-m{font-size:.75rem;text-align:center;color:var(--muted);font-weight:600;padding:4px 0;border-radius:6px}
+.cal-m.now{background:var(--field-2);color:#ffffff}
+html.a11y .cal-m.now{background:var(--ink);color:var(--bg)}
+.cal-bar{height:22px;border-radius:6px;background:var(--field-2)}
+.cal-bar.b2{background:var(--loam)}.cal-bar.b3{background:#16a34a}
+.cal-label{font-size:.82rem;font-weight:600;grid-column:1/-1;margin-top:8px}
+.now-box{margin-top:14px;display:flex;gap:10px;align-items:flex-start;background:var(--wheat-soft);border-radius:var(--radius);padding:12px 14px;color:var(--ink);flex-wrap:wrap}
+
+/* news */
+.news-card{padding:0;overflow:hidden;text-decoration:none;color:var(--ink)}
+.news-card .img{aspect-ratio:16/9}
+.news-card .body{padding:14px 16px 18px;display:flex;flex-direction:column;gap:6px}
+.news-card time{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.news-card p{color:var(--muted);font-size:.92rem}
+.cover{width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:18px;color:#ffffff;background:linear-gradient(135deg,#14532d,#0f1712)}
+.cover.red{background:linear-gradient(135deg,#b91c1c,#450a0a)}
+.cover.brown{background:linear-gradient(135deg,#334155,#0f172a)}
+.cover b{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.4rem);font-weight:600;line-height:1}
+.cover span{font-size:.8rem;opacity:.85;text-transform:uppercase;letter-spacing:.1em}
+.cover .orn{height:8px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.8) 0 8px,transparent 8px 12px);opacity:.5}
+.article{max-width:76ch;display:flex;flex-direction:column;gap:14px}
+.article .img{aspect-ratio:16/9;border-radius:var(--radius)}
+
+/* banners */
+.banners{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.banner{display:flex;gap:14px;align-items:center;border:1px solid var(--line);background:var(--surface);border-radius:var(--radius);padding:14px 16px;text-decoration:none;color:var(--ink);font-size:.88rem;line-height:1.35;min-width:0;transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.banner:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.08);border-color:var(--field-2)}
+.banner .b-ico{flex:none;width:48px;height:48px;border-radius:10px;display:grid;place-items:center;overflow:hidden;background:#f8fafc;border:1px solid var(--line)}
+.banner .b-ico svg{width:40px;height:40px;display:block}
+.banner b{display:block;font-size:.95rem;font-weight:700;color:var(--ink);margin-bottom:2px}
+.banner .b-desc{display:block;font-size:.82rem;color:var(--muted);line-height:1.3}
+
+/* inner pages */
+.crumbs{font-size:.85rem;color:var(--muted);margin-bottom:10px}
+.crumbs a{color:var(--muted)}
+.page{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px}
+.prose{max-width:76ch;display:flex;flex-direction:column;gap:14px;min-width:0}
+.prose h2{margin-top:14px}
+.prose ul,.prose ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+.rail{display:flex;flex-direction:column;gap:14px}
+.rail .card h3{font-size:.95rem}
+.rail nav a{display:block;padding:.5em .2em;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:.92rem}
+.rail nav a[aria-current="page"]{color:var(--field-2);font-weight:700}
+.t-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius)}
+table.t{border-collapse:collapse;width:100%;font-size:.92rem;background:var(--surface)}
+table.t th,table.t td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.t th{background:var(--surface-2);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+table.t td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.person{display:grid;grid-template-columns:92px 1fr;gap:14px;align-items:center}
+.portrait{width:92px;height:112px;border-radius:10px;overflow:hidden}
+.notice{border-left:4px solid var(--field-2);background:var(--wheat-soft);padding:12px 14px;border-radius:0 var(--radius) var(--radius) 0;color:var(--ink)}
+.kv{display:grid;grid-template-columns:minmax(120px,210px) 1fr;gap:6px 16px;font-size:.95rem;margin:0}
+.kv dt{color:var(--muted)}.kv dd{margin:0;font-variant-numeric:tabular-nums}
+.two-col{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+.svc-hero{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:center;margin-bottom:24px}
+.svc-hero .img{aspect-ratio:16/10;border-radius:var(--radius)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.facts div{background:var(--surface-2);border-radius:10px;padding:10px 12px;font-size:.82rem;color:var(--muted)}
+.facts b{display:block;color:var(--ink);font-size:1rem}
+.fleet{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.fleet .card{padding:0;overflow:hidden}
+.fleet .img{aspect-ratio:16/10}
+.fleet .body{padding:12px 14px}
+
+/* order builder */
+.builder{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.field{display:flex;flex-direction:column;gap:4px;font-size:.88rem;font-weight:600}
+.field input,.field select,.field textarea{font:inherit;font-weight:400;font-size:1rem;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:.6em .7em;width:100%;min-height:44px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.out{background:var(--surface-2);border-radius:10px;padding:14px;font-size:.9rem;white-space:pre-wrap;font-variant-numeric:tabular-nums;min-height:180px}
+.map{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface-2)}
+.map svg{display:block;width:100%;height:auto}
+
+.editor{background:var(--surface);border:2px dashed var(--field-2);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:10px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + var(--bar-h) + env(safe-area-inset-bottom,0px));background:#0f172a;color:#ffffff;padding:.7em 1.1em;border-radius:10px;font-size:.9rem;z-index:80;box-shadow:0 10px 25px rgba(0,0,0,.2)}
+.cookie{position:fixed;left:16px;bottom:calc(16px + var(--bar-h) + env(safe-area-inset-bottom,0px));z-index:40;max-width:min(360px,calc(100vw - 32px));background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:0 12px 30px rgba(0,0,0,.18);font-size:.85rem;display:flex;flex-direction:column;gap:10px}
+.cookie .row{display:flex;gap:8px;flex-wrap:wrap}
+.cookie .btn{font-size:.82rem;padding:.45em .9em;min-height:38px}
+
+/* Admin Panel & CMS */
+.admin-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:20px;box-shadow:0 6px 20px rgba(0,0,0,.04)}
+.admin-header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:20px;padding-bottom:16px;border-bottom:2px solid var(--line)}
+.admin-tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:2px solid var(--line);margin-bottom:20px}
+.admin-tab-btn{border:0;background:transparent;font:600 .9rem var(--font-body);padding:.65em 1.1em;cursor:pointer;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-2px;border-radius:8px 8px 0 0;transition:all .15s}
+.admin-tab-btn:hover{color:var(--ink);background:var(--surface-2)}
+.admin-tab-btn.active{color:var(--field-2);border-bottom-color:var(--field-2);background:var(--surface-2);font-weight:700}
+.admin-grid{display:grid;gap:12px}
+.admin-row{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:12px 16px;flex-wrap:wrap}
+.admin-badge{font-size:.75rem;font-weight:700;padding:.2em .6em;border-radius:99px;background:var(--wheat-soft);color:var(--field-2)}
+.admin-actions-cell{display:flex;gap:8px;align-items:center;flex-shrink:0}
+.btn-sm{font-size:.82rem;padding:.35em .75em;min-height:34px;border-radius:8px}
+.btn-danger{background:#dc2626;border-color:#dc2626;color:#fff}
+.btn-danger:hover{background:#b91c1c}
+.admin-tip{background:var(--wheat-soft);border-left:4px solid var(--field-2);padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:18px;font-size:.88rem;color:var(--ink);line-height:1.5}
+.admin-form-box{background:var(--surface);border:2px dashed var(--field-2);border-radius:var(--radius);padding:18px;margin-bottom:20px}
+.card-quick-del{position:absolute;top:8px;right:8px;z-index:10;background:rgba(220,38,38,.9);color:#fff;border:0;border-radius:6px;padding:4px 8px;font-size:.75rem;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:4px;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+.card-quick-del:hover{background:#b91c1c}
+
+footer{background:#0e1d13;color:#d1fae5;padding-block:36px 24px;font-size:.9rem}
+html.a11y footer{background:var(--bg);color:var(--ink);border-top:3px solid var(--ink)}
+footer a{color:#86efac}
+html.a11y footer a{color:var(--ink)}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+footer h4{font:600 .8rem var(--font-body);text-transform:uppercase;letter-spacing:.1em;color:#a7f3d0;margin:0 0 10px}
+html.a11y footer h4{color:var(--ink)}
+footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.foot-bottom{margin-top:28px;padding-top:16px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.8rem;color:#a7f3d0}
+html.a11y .foot-bottom{color:var(--ink)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (prefers-reduced-motion:no-preference){.fade{animation:fade .35s ease both}@keyframes fade{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
+
+/* ---------- tablet ---------- */
+@media (max-width:980px){
+  .g3,.g4{grid-template-columns:repeat(2,1fr)}
+  .banners{grid-template-columns:repeat(2,1fr)}
+  .page{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .svc-hero{grid-template-columns:1fr}
+  .two-col{grid-template-columns:1fr}
+  .head-contacts{display:none}
+}
+/* ---------- phone ---------- */
+@media (max-width:760px){
+  :root{--bar-h:64px}
+  .bottombar{display:grid}
+  .util-left{display:none}
+  .util .wrap{padding-block:6px}
+  .a11y-btn .lbl{display:none}
+  header.site .wrap{padding-block:10px;gap:10px}
+  .brand svg{width:44px;height:44px}
+  .brand-name{font-size:1.05rem}
+  .brand-sub{font-size:.72rem}
+  .search{display:none}
+  .search.open{display:flex;max-width:none;flex-basis:100%;order:3}
+  header.site .wrap{flex-wrap:wrap}
+  .head-mobile{display:flex}
+  nav.main{display:none}
+  .hero .wrap{grid-template-columns:1fr;padding-block:0 26px;gap:18px}
+  .hero-art{order:-1;border-radius:0;margin-inline:-16px;width:calc(100% + 32px);max-width:none;aspect-ratio:16/11;box-shadow:none}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .hero .ctas{display:flex;flex-direction:column;gap:10px;width:100%}
+  .hero .ctas .btn{width:100%;min-height:48px;font-size:1rem}
+  .g3,.g4{grid-template-columns:1fr!important;gap:16px!important}
+  .banners{grid-template-columns:1fr!important;gap:12px!important}
+  .rail-x{display:grid!important;grid-auto-flow:row!important;grid-template-columns:1fr!important;overflow:visible!important;margin-inline:0!important;padding:0!important;gap:16px!important}
+  .rail-x>*{scroll-snap-align:none!important;width:100%!important}
+  .card,.step,.banner{padding:16px}
+  .card h3,.svc .body h3,.news-card .body h3{font-size:1.15rem;line-height:1.35;font-weight:700}
+  .card p,.svc .body p,.news-card .body p{font-size:0.95rem;line-height:1.5;color:var(--muted)}
+  .steps{grid-template-columns:1fr}
+  .builder{grid-template-columns:1fr}
+  .form-grid{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr 1fr}
+  .kv{grid-template-columns:1fr}.kv dd{margin-bottom:8px}
+  .person{grid-template-columns:72px 1fr}.portrait{width:72px;height:88px}
+  /* tables become cards */
+  .t-wrap{border:0;overflow:visible}
+  table.t,table.t tbody,table.t tr,table.t td{display:block;width:100%}
+  table.t thead{display:none}
+  table.t{background:transparent}
+  table.t tr{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;padding:6px 0}
+  table.t td{border:0;padding:6px 14px;display:grid;grid-template-columns:42% 1fr;gap:8px}
+  table.t td.num{white-space:normal}
+  table.t td::before{content:attr(data-label);color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em}
+  .demo-dock .pill{padding:.5em .8em;font-size:.78rem}
+  main{padding-block:24px 40px}
+  .sec{margin-top:34px}
+}
+</style>
+
+<a class="sr" href="#main">Перейти к содержимому</a>
+<div class="util">
+  <div class="wrap">
+    <div class="util-left">
+      <span data-i="hours">Пн–Пт 8:00–17:00, обед 13:00–14:00</span>
+      <span>225306, г. Кобрин, ул. Пролетарская, 183</span>
+    </div>
+    <div class="util-right">
+      <button type="button" class="mode-toggle" id="mode-toggle-btn" title="Переключить режим просмотра (Посетитель / Администратор)">
+        <span class="mode-dot"></span>
+        <span id="mode-toggle-text">👤 Режим: Посетитель</span>
+      </button>
+      <a href="#admin" class="a11y-btn admin-only" id="top-admin-link" style="border-color:var(--line);background:var(--surface-2);color:var(--field-2);text-decoration:none;font-weight:600" title="Панель администратора (CMS)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+        <span>Панель управления (CMS)</span>
+      </a>
+      <div class="lang" role="group" aria-label="Язык сайта">
+        <button type="button" id="lang-ru" aria-pressed="true">РУС</button>
+        <button type="button" id="lang-by" aria-pressed="false">БЕЛ</button>
+      </div>
+      <button type="button" class="a11y-btn" id="a11y-toggle" aria-expanded="false" aria-label="Версия для слабовидящих">
+        <svg width="18" height="12" viewBox="0 0 24 16" aria-hidden="true"><path d="M12 1C6 1 2 8 2 8s4 7 10 7 10-7 10-7-4-7-10-7Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="8" r="3" fill="currentColor"/></svg>
+        <span class="lbl" data-i="a11y">Версия для слабовидящих</span>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="a11y-panel" id="a11y-panel" hidden>
+  <div class="wrap">
+    <fieldset><legend>Размер шрифта</legend>
+      <button type="button" data-fs="16" aria-pressed="true">А</button>
+      <button type="button" data-fs="20" style="font-size:1.1rem">А</button>
+      <button type="button" data-fs="24" style="font-size:1.3rem">А</button>
+    </fieldset>
+    <fieldset><legend>Цвет</legend>
+      <button type="button" class="sw-bw" data-c="c-bw" aria-pressed="true">Ц</button>
+      <button type="button" class="sw-wb" data-c="c-wb">Ц</button>
+      <button type="button" class="sw-blue" data-c="c-blue">Ц</button>
+      <button type="button" class="sw-beige" data-c="c-beige">Ц</button>
+    </fieldset>
+    <fieldset><legend>Изображения</legend><button type="button" id="img-toggle" aria-pressed="false">Выкл.</button></fieldset>
+    <fieldset><legend>Интервал</legend><button type="button" id="ls-toggle" aria-pressed="false">Увеличить</button></fieldset>
+    <button type="button" id="a11y-off">Обычная версия</button>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Кобринхимсервис, на главную">
+      <svg width="54" height="54" viewBox="0 0 54 54" aria-hidden="true">
+        <rect width="54" height="54" rx="12" fill="var(--field)"/>
+        <path d="M6 44 Q27 30 48 44" stroke="var(--wheat)" stroke-width="3" fill="none"/>
+        <path d="M6 37 Q27 23 48 37" stroke="var(--on-field)" stroke-width="2.4" fill="none" opacity=".85"/>
+        <path d="M6 30 Q27 16 48 30" stroke="var(--on-field)" stroke-width="2" fill="none" opacity=".6"/>
+        <path d="M27 6 C31 12 33 15 33 18.5 A6 6 0 0 1 21 18.5 C21 15 23 12 27 6Z" fill="var(--wheat)"/>
+      </svg>
+      <span><span class="brand-name" data-i="name">Кобринхимсервис</span><span class="brand-sub" data-i="kup">Коммунальное унитарное предприятие</span></span>
+    </a>
+    <form class="search" role="search" id="search-form">
+      <label class="sr" for="q">Поиск по сайту</label>
+      <input id="q" type="search" placeholder="Поиск по сайту">
+      <button type="submit" aria-label="Найти"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2"/></svg></button>
+    </form>
+    <div class="head-contacts"><span data-i="reception">Приёмная</span><b>+375 1642 6-26-72</b></div>
+    <div class="head-mobile">
+      <button type="button" class="icon-btn" id="m-search" aria-label="Поиск"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<nav class="main" id="nav" aria-label="Главное меню">
+  <div class="wrap links">
+    <a href="#home" data-r="home" data-i="home">Главная</a>
+    <a href="#services" data-r="services" data-i="services">Услуги</a>
+    <a href="#news" data-r="news" data-i="news">Новости</a>
+    <div class="dd" data-group="company">
+      <button type="button" aria-expanded="false"><span data-i="company">Предприятие</span> ▾</button>
+      <div class="dd-menu" id="dd-company"></div>
+    </div>
+    <div class="dd" data-group="info">
+      <button type="button" aria-expanded="false"><span data-i="info">Информация</span> ▾</button>
+      <div class="dd-menu" id="dd-info"></div>
+    </div>
+    <a href="#order" class="cta-nav" data-r="order" data-i="order">Заявка на работы →</a>
+  </div>
+</nav>
+
+<div id="hero-slot"></div>
+<main id="main" class="wrap" tabindex="-1"></main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4 data-i="kup">Коммунальное унитарное предприятие</h4>
+        <p><b data-i="name">Кобринхимсервис</b><br>225306, Брестская обл., г. Кобрин, ул. Пролетарская, 183<br>УНП 290258679</p>
+        <p style="margin-top:8px">Приёмная: +375 1642 6-26-72<br>E-mail: 2300599@brest.by</p>
+      </div>
+      <div>
+        <h4 data-i="sections">Разделы</h4>
+        <ul>
+          <li><a href="#services" data-i="services">Услуги</a></li>
+          <li><a href="#news" data-i="news">Новости</a></li>
+          <li><a href="#appeals" data-i="appeals">Обращения граждан и юридических лиц</a></li>
+          <li><a href="#adminproc" data-i="adminproc">Административные процедуры</a></li>
+          <li><a href="#sitemap" data-i="sitemap">Карта сайта</a></li>
+          <li><a href="#admin" style="color:#86efac;font-weight:700">⚙️ Панель управления (CMS)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i="docs">Документы</h4>
+        <ul>
+          <li><a href="#privacy" data-i="privacy">Политика обработки персональных данных</a></li>
+          <li><a href="#privacy" data-i="cookies">Политика в отношении cookie</a></li>
+          <li><a href="#admin" onclick="setTimeout(()=>document.querySelector('[data-tab=\'help\']')?.click(),50)">Соответствие Положению № 645</a></li>
+          <li><a href="https://pravo.by" target="_blank" rel="noopener">Национальный правовой портал</a></li>
+          <li><a href="https://president.gov.by" target="_blank" rel="noopener">Портал Президента Республики Беларусь</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 КУП «Кобринхимсервис». <span data-i="updated">Информация обновлена:</span> <span id="upd">13.10.2026</span></span>
+      <span>Разработка интернет-сайта: <a href="https://nestudio.site" target="_blank" rel="noopener">nestudio</a></span>
+    </div>
+  </div>
+</footer>
+
+<nav class="bottombar" aria-label="Быстрые действия">
+  <a href="tel:+375164262672"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-i="call">Позвонить</span></a>
+  <a href="#order" class="primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7M9 8h4"/></svg><span data-i="orderShort">Заявка</span></a>
+  <a href="#appeals"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg><span data-i="appealShort">Обращение</span></a>
+  <button type="button" id="m-menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span data-i="menu">Меню</span></button>
+</nav>
+
+<div class="drawer" id="drawer" hidden>
+  <div class="drawer-head"><b style="font-family:var(--font-display)">Меню</b><button type="button" class="icon-btn" id="drawer-x" aria-label="Закрыть меню">✕</button></div>
+  <div class="drawer-body" id="drawer-body"></div>
+</div>
+
+<div class="cookie" id="cookie" hidden>
+  <div><b>Мы используем cookie</b><br>Обязательные cookie нужны для работы сайта. Аналитические включаются только с вашего согласия. <a href="#privacy">Подробнее</a></div>
+  <div class="row"><button type="button" class="btn" id="ck-all">Принять все</button><button type="button" class="btn ghost" id="ck-min">Только обязательные</button></div>
+</div>
+
+<script>
+/* Scene engine: layered Polesie landscapes with agricultural machinery, drawn as SVG. */
+var Scenes=(function(){
+"use strict";
+function R(seed){var s=seed%2147483647;if(s<=0)s+=2147483646;return function(){s=s*16807%2147483647;return (s-1)/2147483646}}
+var uid=0;
+var SKY={
+ morning:{top:"#8fb9d6",mid:"#e9e2cf",hor:"#f6d39a",sun:"#fff1c9",sunGlow:"#ffd98a",forest:"#3f5e52",haze:"#c9d6cf",light:1},
+ day:{top:"#6ea7d8",mid:"#b9d6ea",hor:"#e8f0ee",sun:"#fffbe8",sunGlow:"#fff3c4",forest:"#2f5240",haze:"#b8cfc4",light:1.05},
+ evening:{top:"#3f5a8c",mid:"#d98d6a",hor:"#f4c27a",sun:"#ffe0a3",sunGlow:"#ff9d5c",forest:"#2a3a3a",haze:"#9a8f8a",light:.85},
+ overcast:{top:"#9aa8b2",mid:"#c9d0d2",hor:"#dfe2dc",sun:"#f4f4ee",sunGlow:"#e9e9e0",forest:"#3a4d45",haze:"#bcc6c1",light:.92}
+};
+var GROUND={
+ plowed:["#6e5139","#8a6a4c","#5c4330"],
+ green:["#5f8f45","#78a857","#4d7a38"],
+ stubble:["#c9b06f","#dcc68a","#b09657"],
+ limed:["#8f7a62","#b5a690","#7b6650"]
+};
+function shade(hex,k){var n=parseInt(hex.slice(1),16),r=n>>16,g=n>>8&255,b=n&255;function c(v){return Math.max(0,Math.min(255,Math.round(v*k)))}return "#"+((1<<24)+(c(r)<<16)+(c(g)<<8)+c(b)).toString(16).slice(1)}
+
+/* ---- machines (local coords, wheels on y=0, facing right) ---- */
+function wheel(cx,cy,r){return '<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="#1e1f1d"/><circle cx="'+cx+'" cy="'+cy+'" r="'+(r*.92)+'" fill="none" stroke="#2c2d2a" stroke-width="'+(r*.16)+'" stroke-dasharray="'+(r*.18)+' '+(r*.14)+'"/><circle cx="'+cx+'" cy="'+cy+'" r="'+(r*.5)+'" fill="#c8c6bd"/><circle cx="'+cx+'" cy="'+cy+'" r="'+(r*.38)+'" fill="#a9a79d"/><circle cx="'+cx+'" cy="'+cy+'" r="'+(r*.13)+'" fill="#55554f"/>'}
+function tractor(col){col=col||"#c4352b";var d=shade(col,.72);
+ return '<g>'+
+ '<rect x="58" y="-66" width="98" height="30" rx="5" fill="'+col+'"/>'+
+ '<rect x="58" y="-66" width="98" height="8" rx="4" fill="'+shade(col,1.15)+'"/>'+
+ '<rect x="146" y="-60" width="12" height="22" rx="2" fill="#3a3a36"/>'+
+ '<g stroke="#2a2a27" stroke-width="1.4">'+[0,1,2,3].map(function(i){return '<line x1="148" x2="156" y1="'+(-56+i*5)+'" y2="'+(-56+i*5)+'"/>'}).join("")+'</g>'+
+ '<rect x="96" y="-92" width="5" height="28" fill="#2a2a27"/><rect x="95" y="-95" width="7" height="5" fill="#1f1f1c"/>'+
+ '<path d="M14 -60 L22 -126 L88 -126 L92 -60 Z" fill="'+d+'"/>'+
+ '<path d="M24 -118 L30 -66 L56 -66 L54 -118 Z" fill="#cfe6ef" opacity=".85"/>'+
+ '<path d="M60 -118 L62 -66 L86 -66 L84 -118 Z" fill="#b9d9e6" opacity=".85"/>'+
+ '<path d="M26 -116 L38 -116 L32 -70 L29 -70Z" fill="#fff" opacity=".35"/>'+
+ '<rect x="16" y="-132" width="76" height="9" rx="3" fill="#2b2b28"/>'+
+ '<rect x="10" y="-62" width="150" height="10" rx="3" fill="#33332f"/>'+
+ '<path d="M0 -40 A42 42 0 0 1 84 -40 L78 -40 A36 36 0 0 0 6 -40Z" fill="'+col+'"/>'+
+ wheel(42,-38,38)+wheel(136,-22,22)+
+ '<path d="M114 -38 A24 24 0 0 1 158 -38" fill="none" stroke="'+col+'" stroke-width="6"/>'+
+ '<rect x="70" y="-46" width="40" height="7" rx="2" fill="#2f2f2b"/>'+
+ '</g>'}
+function hopperTrailer(fill){return '<g>'+
+ '<rect x="-150" y="-30" width="135" height="10" rx="2" fill="#3a3a35"/>'+
+ '<line x1="-20" y1="-24" x2="10" y2="-44" stroke="#2a2a26" stroke-width="5"/>'+
+ '<path d="M-160 -112 L-6 -112 L-24 -36 L-142 -36 Z" fill="#d9822b"/>'+
+ '<path d="M-160 -112 L-6 -112 L-10 -100 L-156 -100 Z" fill="#e89a45"/>'+
+ '<g stroke="#b86a1f" stroke-width="2">'+[0,1,2,3,4].map(function(i){return '<line x1="'+(-140+i*26)+'" y1="-98" x2="'+(-132+i*22)+'" y2="-40"/>'}).join("")+'</g>'+
+ '<path d="M-158 -116 Q-90 -132 -8 -116 L-8 -112 L-158 -112Z" fill="'+(fill||"#e8e0d0")+'"/>'+
+ '<text x="-84" y="-70" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle" opacity=".9">РУ-7000</text>'+
+ wheel(-108,-20,20)+wheel(-62,-20,20)+
+ '<rect x="-168" y="-24" width="30" height="6" fill="#55554f"/><ellipse cx="-168" cy="-18" rx="14" ry="4" fill="#77776f"/><ellipse cx="-140" cy="-18" rx="14" ry="4" fill="#77776f"/>'+
+ '</g>'}
+function sprayerTrailer(){return '<g>'+
+ '<line x1="-20" y1="-24" x2="10" y2="-44" stroke="#2a2a26" stroke-width="5"/>'+
+ '<rect x="-150" y="-34" width="132" height="10" rx="2" fill="#3a3a35"/>'+
+ '<rect x="-156" y="-100" width="140" height="64" rx="30" fill="#f2efe6"/>'+
+ '<rect x="-150" y="-94" width="128" height="10" rx="5" fill="#fff" opacity=".7"/>'+
+ '<rect x="-156" y="-70" width="140" height="6" fill="#1f6e46"/>'+
+ '<rect x="-96" y="-112" width="22" height="14" rx="3" fill="#d6d1c3"/>'+
+ wheel(-86,-22,24)+
+ '<rect x="-176" y="-60" width="14" height="40" fill="#555"/>'+
+ '</g>'}
+function boom(len){var s='<g stroke="#4a4a44" stroke-width="3" fill="none"><path d="M-170 -44 L'+(-170-len)+' -50"/><path d="M-170 -44 L'+(-170-len*.6)+' -14"/></g><g fill="#4a4a44">';for(var i=1;i<12;i++){s+='<rect x="'+(-170-i*len/12)+'" y="'+(-46-i*.5)+'" width="2" height="6"/>'}return s+'</g>'}
+function plow(){return '<g><line x1="-10" y1="-30" x2="-60" y2="-30" stroke="#33332f" stroke-width="7"/>'+[0,1,2,3].map(function(i){var x=-70-i*28;return '<path d="M'+x+' -36 l20 0 l-6 30 l-22 6 z" fill="#5c5c56"/><path d="M'+x+' -36 l20 0 l-4 10 l-18 0z" fill="#c4352b"/>'}).join("")+'<line x1="-60" y1="-36" x2="-170" y2="-36" stroke="#33332f" stroke-width="6"/></g>'}
+function truck(load){var cab="#2c5f9e";return '<g>'+
+ '<rect x="-150" y="-50" width="250" height="12" fill="#2b2b28"/>'+
+ '<path d="M100 -132 L170 -132 L186 -96 L186 -46 L100 -46Z" fill="'+cab+'"/>'+
+ '<path d="M108 -124 L164 -124 L176 -96 L108 -96Z" fill="#cfe6ef" opacity=".85"/>'+
+ '<rect x="100" y="-140" width="74" height="10" rx="3" fill="#24497a"/>'+
+ '<rect x="176" y="-62" width="12" height="14" fill="#f4d35e"/>'+
+ '<text x="140" y="-58" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">МАЗ</text>'+
+ (load==="bags"?
+  '<rect x="-150" y="-62" width="240" height="12" fill="#6b5b45"/>'+[0,1,2,3].map(function(i){return '<rect x="'+(-146+i*59)+'" y="-120" width="54" height="58" rx="8" fill="#f1eee6" stroke="#d6d0c2"/><path d="M'+(-136+i*59)+' -120 q8 -12 16 0 M'+(-112+i*59)+' -120 q8 -12 16 0" stroke="#3a6ea5" stroke-width="3" fill="none"/>'}).join(""):
+  '<path d="M-150 -132 L92 -132 L92 -50 L-150 -50Z" fill="#7a8c5a"/><path d="M-150 -132 L92 -132 L92 -120 L-150 -120Z" fill="#6a7c4c"/>'+[0,1,2,3,4,5].map(function(i){return '<line x1="'+(-130+i*40)+'" y1="-128" x2="'+(-130+i*40)+'" y2="-54" stroke="#66784a" stroke-width="2"/>'}).join(""))+
+ wheel(-110,-24,24)+wheel(-58,-24,24)+wheel(146,-24,24)+
+ '</g>'}
+function bagsPile(){var s='<g>';var pos=[[0,0],[62,0],[124,0],[186,0],[31,-60],[93,-60],[155,-60],[62,-120],[124,-120]];pos.forEach(function(p){s+='<rect x="'+p[0]+'" y="'+(p[1]-58)+'" width="58" height="58" rx="9" fill="#f3f0e8" stroke="#d3cdbf" stroke-width="1.5"/><path d="M'+(p[0]+10)+' '+(p[1]-58)+' q8 -12 14 0 M'+(p[0]+34)+' '+(p[1]-58)+' q8 -12 14 0" stroke="#3a6ea5" stroke-width="3" fill="none"/><rect x="'+(p[0]+14)+'" y="'+(p[1]-36)+'" width="30" height="16" fill="#fff" stroke="#c9c2b2"/><line x1="'+(p[0]+18)+'" x2="'+(p[0]+40)+'" y1="'+(p[1]-30)+'" y2="'+(p[1]-30)+'" stroke="#7a7466"/>'});s+='<rect x="-8" y="0" width="260" height="8" fill="#9b7b52"/></g>';return s}
+function hangar(w){w=w||360;var h=w*.42;var s='<g>';
+ s+='<path d="M0 0 L0 '+(-h*.55)+' Q'+(w/2)+' '+(-h*1.35)+' '+w+' '+(-h*.55)+' L'+w+' 0Z" fill="#c7ccc9"/>';
+ for(var i=1;i<18;i++){var x=i*w/18;s+='<line x1="'+x+'" y1="0" x2="'+x+'" y2="'+(-h*.55-(Math.sin(Math.PI*x/w))*h*.62)+'" stroke="#aab0ad" stroke-width="2"/>'}
+ s+='<rect x="'+(w*.36)+'" y="'+(-h*.62)+'" width="'+(w*.28)+'" height="'+(h*.62)+'" fill="#5e6764"/><rect x="'+(w*.37)+'" y="'+(-h*.6)+'" width="'+(w*.26)+'" height="'+(h*.6)+'" fill="#3e4644"/>';
+ s+='<rect x="'+(w*.3)+'" y="'+(-h*.86)+'" width="'+(w*.4)+'" height="'+(h*.16)+'" rx="3" fill="#1f4a33"/><text x="'+(w/2)+'" y="'+(-h*.75)+'" font-family="Arial,sans-serif" font-size="'+(h*.1)+'" font-weight="700" fill="#f5e7c6" text-anchor="middle">СКЛАД № 2</text>';
+ return s+'</g>'}
+function office(){var s='<g>';
+ s+='<rect x="0" y="-150" width="330" height="150" fill="#ece6d8"/><rect x="0" y="-158" width="330" height="10" fill="#7b4b3a"/>';
+ s+='<rect x="0" y="-12" width="330" height="12" fill="#b9b1a0"/>';
+ for(var r=0;r<2;r++)for(var c=0;c<7;c++){if(r===1&&c===3)continue;var x=16+c*45,y=-138+r*66;s+='<rect x="'+x+'" y="'+y+'" width="30" height="40" fill="#9fc2d1"/><rect x="'+x+'" y="'+y+'" width="30" height="40" fill="none" stroke="#fff" stroke-width="3"/><line x1="'+(x+15)+'" x2="'+(x+15)+'" y1="'+y+'" y2="'+(y+40)+'" stroke="#fff" stroke-width="2"/>'}
+ s+='<rect x="146" y="-62" width="38" height="50" fill="#6b4a36"/><rect x="138" y="-70" width="54" height="8" fill="#5a5a55"/>';
+ s+='<rect x="70" y="-102" width="190" height="22" rx="2" fill="#1f4a33"/><text x="165" y="-87" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#f5e7c6" text-anchor="middle">КУП «КОБРИНХИМСЕРВИС»</text>';
+ /* flag pole */
+ s+='<line x1="-30" y1="0" x2="-30" y2="-210" stroke="#bdbdb5" stroke-width="4"/><g transform="translate(-28 -206)"><rect width="70" height="30" fill="#c8313e"/><rect y="20" width="70" height="10" fill="#4aa657"/><rect width="9" height="30" fill="#fff"/>'+[0,1,2,3,4].map(function(i){return '<path d="M4.5 '+(2+i*6)+' l3 3 l-3 3 l-3 -3z" fill="#c8313e"/>'}).join("")+'</g>';
+ return s+'</g>'}
+function pine(x,y,h,col){return '<path d="M'+x+' '+y+' l'+(-h*.18)+' 0 l'+(h*.12)+' '+(-h*.35)+' l'+(-h*.08)+' 0 l'+(h*.1)+' '+(-h*.3)+' l'+(-h*.06)+' 0 l'+(h*.1)+' '+(-h*.35)+' l'+(h*.1)+' '+(h*.35)+' l'+(-h*.06)+' 0 l'+(h*.1)+' '+(h*.3)+' l'+(-h*.08)+' 0 l'+(h*.12)+' '+(h*.35)+'z" fill="'+col+'"/>'}
+function birch(x,y,h){return '<g><rect x="'+(x-2)+'" y="'+(y-h)+'" width="4" height="'+h+'" fill="#efeee8"/><ellipse cx="'+x+'" cy="'+(y-h*.75)+'" rx="'+(h*.22)+'" ry="'+(h*.35)+'" fill="#6f9a48"/><ellipse cx="'+(x+h*.08)+'" cy="'+(y-h*.62)+'" rx="'+(h*.16)+'" ry="'+(h*.24)+'" fill="#86b05a"/></g>'}
+
+/* ---- composition ---- */
+function scene(o){
+ o=o||{};var W=800,H=500,rnd=R(o.seed||7),T=SKY[o.time||"day"],id="s"+(++uid);
+ var hz=o.horizon||H*.44, vx=o.vx||W*.62, g=GROUND[o.ground||"plowed"];
+ var s='<svg viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid slice" role="img" aria-label="'+(o.alt||"")+'"><defs>'+
+ '<linearGradient id="'+id+'sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+T.top+'"/><stop offset=".62" stop-color="'+T.mid+'"/><stop offset="1" stop-color="'+T.hor+'"/></linearGradient>'+
+ '<radialGradient id="'+id+'sun"><stop offset="0" stop-color="'+T.sunGlow+'" stop-opacity=".9"/><stop offset="1" stop-color="'+T.sunGlow+'" stop-opacity="0"/></radialGradient>'+
+ '<linearGradient id="'+id+'gnd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+shade(g[1],T.light*.92)+'"/><stop offset="1" stop-color="'+shade(g[0],T.light*.9)+'"/></linearGradient>'+
+ '<radialGradient id="'+id+'vig" cx=".5" cy=".45" r=".75"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></radialGradient>'+
+ '<filter id="'+id+'blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="'+(o.blur||14)+'"/></filter>'+
+ '<filter id="'+id+'soft"><feGaussianBlur stdDeviation="2"/></filter>'+
+ '<filter id="'+id+'grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="'+(o.seed||3)+'"/><feColorMatrix values="0 0 0 0 .5  0 0 0 0 .45  0 0 0 0 .38  0 0 0 .09 0"/></filter>'+
+ '</defs>';
+ s+='<rect width="'+W+'" height="'+H+'" fill="url(#'+id+'sky)"/>';
+ var sx=o.sunX||W*(o.time==="evening"?.24:.2),sy=hz-(o.time==="evening"?18:70);
+ if(o.time!=="overcast"){s+='<circle cx="'+sx+'" cy="'+sy+'" r="150" fill="url(#'+id+'sun)"/><circle cx="'+sx+'" cy="'+sy+'" r="'+(o.time==="evening"?34:26)+'" fill="'+T.sun+'"/>'}
+ /* clouds */
+ s+='<g filter="url(#'+id+'soft)" opacity="'+(o.time==="overcast"?.9:.75)+'">';for(var c=0;c<(o.time==="overcast"?9:5);c++){var cx=rnd()*W,cy=30+rnd()*hz*.45,cw=60+rnd()*120;s+='<ellipse cx="'+cx+'" cy="'+cy+'" rx="'+cw+'" ry="'+(cw*.18)+'" fill="#fff"/><ellipse cx="'+(cx+cw*.3)+'" cy="'+(cy-cw*.08)+'" rx="'+(cw*.5)+'" ry="'+(cw*.2)+'" fill="#fff"/>'}s+='</g>';
+ /* far forest (Polesie pines) */
+ var fl='M0 '+hz;for(var x=0;x<=W;x+=6){fl+=' L'+x+' '+(hz-14-rnd()*18-(x%36<6?10:0))}fl+=' L'+W+' '+(hz+4)+' L0 '+(hz+4)+'Z';
+ s+='<path d="'+fl+'" fill="'+T.haze+'" opacity=".9"/>';
+ var fl2='M0 '+(hz+2);for(var x2=0;x2<=W;x2+=5){fl2+=' L'+x2+' '+(hz-6-rnd()*14-(x2%25<5?8:0))}fl2+=' L'+W+' '+(hz+6)+' L0 '+(hz+6)+'Z';
+ s+='<path d="'+fl2+'" fill="'+T.forest+'"/>';
+ /* mid bands */
+ var bands=o.bands||["stubble","green","plowed"];var y0=hz+4;
+ bands.forEach(function(b,i){var c=GROUND[b],y1=y0+(i+1)*(H*.08)+i*6;s+='<path d="M0 '+(y0+i*(H*.08))+' Q'+(W*.4)+' '+(y0+i*(H*.08)-6)+' '+W+' '+(y0+i*(H*.08)+4)+' L'+W+' '+y1+' L0 '+y1+'Z" fill="'+shade(c[1],T.light*(0.9+i*.03))+'"/>';
+  for(var k=0;k<14;k++){var yy=y0+i*(H*.08)+k*(H*.08/14);s+='<line x1="0" x2="'+W+'" y1="'+yy+'" y2="'+(yy+3)+'" stroke="'+c[2]+'" stroke-width=".6" opacity=".35"/>'}});
+ /* tree row */
+ if(o.trees!==false){for(var t=0;t<7;t++){var tx=rnd()*W,ty=y0+H*.05+rnd()*8;s+=rnd()>.5?pine(tx,ty,26+rnd()*20,shade(T.forest,1.1)):birch(tx,ty,24+rnd()*16)}}
+ /* foreground field */
+ var fy=o.fieldTop||H*.62;
+ s+='<path d="M0 '+fy+' Q'+(W*.5)+' '+(fy-12)+' '+W+' '+fy+' L'+W+' '+H+' L0 '+H+'Z" fill="url(#'+id+'gnd)"/>';
+ for(var f=0;f<=34;f++){var bx=-W*.7+f*(W*2.4/34);s+='<path d="M'+vx+' '+(fy-6)+' L'+bx.toFixed(1)+' '+H+'" stroke="'+(f%2?g[2]:shade(g[1],1.12))+'" stroke-width="'+(f%2?2.2:1.2)+'" opacity="'+(f%2?.5:.35)+'"/>'}
+ for(var q=1;q<7;q++){var yq=fy+Math.pow(q/7,1.8)*(H-fy);s+='<line x1="0" x2="'+W+'" y1="'+yq+'" y2="'+yq+'" stroke="'+g[2]+'" stroke-width="1" opacity=".18"/>'}
+ /* objects */
+ if(o.building==="hangar"){s+='<g transform="translate('+(o.bx||360)+' '+(fy+6)+') scale(1.15)">'+hangar(340)+'</g>'}
+ if(o.building==="office"){s+='<g transform="translate('+(o.bx||300)+' '+(fy+8)+') scale(1.25)">'+office()+'</g>'}
+ var mx=o.mx||W*.56,my=o.my||H*.86,sc=o.scale||1.25,m=o.machine;
+ var fx='';
+ if(m){var body='';
+  if(m==="spreader"||m==="lime"){body=hopperTrailer(m==="lime"?"#f4f2ec":"#d7d3c4")+tractor(o.color)}
+  else if(m==="sprayer"){body=boom(260)+sprayerTrailer()+tractor(o.color||"#2f7d4f")}
+  else if(m==="plow"){body=plow()+tractor(o.color)}
+  else if(m==="tractor"){body=tractor(o.color)}
+  else if(m==="truck"){body=truck(o.load)}
+  else if(m==="bags"){body=bagsPile()}
+  /* shadow */
+  s+='<ellipse cx="'+(mx+(m==="bags"?120*sc:-10*sc))+'" cy="'+(my+2)+'" rx="'+(m==="bags"?150*sc:170*sc)+'" ry="'+(10*sc)+'" fill="#000" opacity=".22" filter="url(#'+id+'soft)"/>';
+  /* effects behind */
+  if(m==="spreader"){fx+='<g>';for(var p=0;p<120;p++){var a=Math.PI*(.62+rnd()*.7),rr=40+rnd()*220,px=mx-150*sc+Math.cos(a)*rr*1.5,py=my-18*sc-Math.sin(a)*rr*.22+rnd()*20;fx+='<circle cx="'+px.toFixed(1)+'" cy="'+py.toFixed(1)+'" r="'+(1+rnd()*2.4).toFixed(1)+'" fill="'+(rnd()>.4?"#f3efe4":"#d9c9a3")+'" opacity="'+(.55+rnd()*.45).toFixed(2)+'"/>'}fx+='</g>'}
+  if(m==="lime"){fx+='<g filter="url(#'+id+'blur)" opacity=".85"><ellipse cx="'+(mx-260*sc)+'" cy="'+(my-40*sc)+'" rx="'+(200*sc)+'" ry="'+(55*sc)+'" fill="#f4f1ea"/><ellipse cx="'+(mx-420*sc)+'" cy="'+(my-70*sc)+'" rx="'+(220*sc)+'" ry="'+(70*sc)+'" fill="#efebe2" opacity=".8"/><ellipse cx="'+(mx-200*sc)+'" cy="'+(my-10*sc)+'" rx="'+(120*sc)+'" ry="'+(30*sc)+'" fill="#fff"/></g>'}
+  if(m==="sprayer"){fx+='<g filter="url(#'+id+'blur)" opacity=".55"><rect x="'+(mx-440*sc)+'" y="'+(my-48*sc)+'" width="'+(330*sc)+'" height="'+(42*sc)+'" fill="#eef4f0"/></g>'}
+  if(m==="plow"){fx+='<g>';for(var p2=0;p2<60;p2++){fx+='<ellipse cx="'+(mx-(60+rnd()*200)*sc)+'" cy="'+(my-rnd()*14)+'" rx="'+(2+rnd()*5)+'" ry="'+(1+rnd()*3)+'" fill="'+g[2]+'"/>'}fx+='</g>'}
+  s+=fx+'<g transform="translate('+mx+' '+my+') scale('+sc+')">'+body+'</g>';
+  if(o.second==="truck"){s+='<g transform="translate('+(o.m2x||140)+' '+(o.m2y||H*.8)+') scale(.75)">'+truck(o.load)+'</g>'}
+ }
+ /* foreground tufts */
+ for(var u=0;u<40;u++){var ux=rnd()*W,uy=H-rnd()*30;s+='<path d="M'+ux+' '+uy+' l2 -'+(6+rnd()*10)+' l2 '+(6+rnd()*10)+'" stroke="'+shade(g[0],.8)+'" stroke-width="1.4" fill="none" opacity=".6"/>'}
+ s+='<rect width="'+W+'" height="'+H+'" filter="url(#'+id+'grain)"/><rect width="'+W+'" height="'+H+'" fill="url(#'+id+'vig)"/>';
+ return s+'</svg>'}
+return {scene:scene};
+})();
+
+</script>
+<script>
+(function(){
+"use strict";
+const store={
+  get(k,d){try{const v=localStorage.getItem("khs3_"+k);return v===null?d:JSON.parse(v)}catch(e){return d}},
+  set(k,v){try{localStorage.setItem("khs3_"+k,JSON.stringify(v))}catch(e){}},
+  del(k){try{localStorage.removeItem("khs3_"+k)}catch(e){}}
+};
+let lang=store.get("lang","ru");
+let viewMode=store.get("view_mode","user");
+
+function updateModeUI(){
+  if(viewMode==="admin"){
+    document.body.classList.remove("mode-user");
+    document.body.classList.add("mode-admin");
+  } else {
+    document.body.classList.remove("mode-admin");
+    document.body.classList.add("mode-user");
+  }
+  const btnText=document.getElementById("mode-toggle-text");
+  if(btnText) btnText.textContent=viewMode==="admin"?"🛠️ Режим: Редактор":"👤 Режим: Посетитель";
+}
+function toggleMode(){
+  viewMode=viewMode==="admin"?"user":"admin";
+  store.set("view_mode",viewMode);
+  updateModeUI();
+  render();
+}
+
+/* ---------- i18n ---------- */
+const BY={
+  hours:"Пн–Пт 8:00–17:00, абед 13:00–14:00",a11y:"Версія для слабабачных",name:"Кобрынхімсэрвіс",kup:"Камунальнае ўнітарнае прадпрыемства",
+  reception:"Прыёмная",menu:"Меню",home:"Галоўная",services:"Паслугі",news:"Навіны",company:"Прадпрыемства",about:"Аб прадпрыемстве",
+  contacts:"Кантакты",anticor:"Барацьба з карупцыяй",ideology:"Ідэалагічная работа",profkom:"Прафкам",vacancies:"Вакансіі",
+  info:"Інфармацыя",appeals:"Звароты грамадзян і юрыдычных асоб",adminproc:"Адміністрацыйныя працэдуры",sections:"Раздзелы",
+  sitemap:"Карта сайта",docs:"Дакументы",privacy:"Палітыка апрацоўкі персанальных даных",cookies:"Палітыка ў дачыненні да cookie",
+  updated:"Інфармацыя абноўлена:",order:"Заяўка на работы →",orderShort:"Заяўка",appealShort:"Зварот",call:"Патэлефанаваць",
+  heroEyebrow:"Брэсцкая вобласць · Кобрынскі раён",heroTitle:"Аграхімічнае абслугоўванне гаспадарак Кобрынскага раёна",
+  heroLead:"Унясенне мінеральных угнаенняў, вапнаванне кіслых глеб, хімічная абарона раслін, механізаваныя работы і перавозкі. Уласная тэхніка і склады.",
+  ctaOrder:"Скласці заяўку",ctaServices:"Усе паслугі",ourServices:"Нашы паслугі",allServices:"Усе паслугі",howOrder:"Як заказаць работы",
+  calTitle:"Аграхімічны каляндар",lastNews:"Навіны",allNews:"Усе навіны",usefulLinks:"Карысныя спасылкі",leaders:"Кіраўніцтва",
+  director:"Дырэктар",address:"Адрас",workHours:"Рэжым работы",more:"Падрабязней",fleet:"Тэхніка і склады",admin:"Панель кіравання (CMS)"
+};
+const t=(k,ru)=>(lang==="by"&&BY[k])?BY[k]:ru;
+
+/* ---------- photo slots ---------- */
+const PHOTOS={};
+function img(key,o,alt,cls){alt=alt||o.alt||"";return `<div class="img ${cls||""}" data-photo="${key}">${PHOTOS[key]?`<img src="img/${key}.jpg" alt="${alt}" loading="lazy">`:Scenes.scene(Object.assign({alt},o))}</div>`}
+
+/* ---------- DEFAULT DATA (REACTIVE CMS STORES) ---------- */
+const DEFAULT_SERVICES=[
+ {id:"fert",ru:"Внесение минеральных удобрений",by:"Унясенне мінеральных угнаенняў",unit:"га",price:"24,50 BYN/га",season:"весна, осень",scene:{machine:"spreader",time:"morning",ground:"plowed",seed:3},
+  short:"Твёрдые азотные, фосфорные, калийные и комплексные удобрения центробежными разбрасывателями.",
+  long:["Вносим твёрдые минеральные удобрения – азотные, фосфорные, калийные и комплексные – машинами центробежного типа. Дозу внесения определяет агрохимическая служба хозяйства по картограммам полей; мы обеспечиваем точное выполнение задания.","Перед началом работ настраиваем разбрасыватель на заданную дозу и ширину захвата, а фактически обработанную площадь фиксируем в акте."],
+  inc:["Погрузка удобрений на складе предприятия или в хозяйстве","Доставка к полю собственным транспортом","Внесение по заданной дозе с контролем ширины захвата","Учёт обработанной площади в акте выполненных работ"],
+  facts:[["Ширина захвата","до 24 м"],["Производительность","до 120 га в смену"],["Сезон","весна, осень"]]},
+ {id:"lime",ru:"Известкование кислых почв",by:"Вапнаванне кіслых глеб",unit:"га · т",price:"18,00 BYN/т",season:"лето, осень",scene:{machine:"lime",time:"day",ground:"stubble",seed:5},
+  short:"Внесение доломитовой муки по данным агрохимического обследования.",
+  long:["Известкование снижает кислотность почвы и повышает отдачу от удобрений. Работы выполняем по проектно-сметной документации, подготовленной по результатам агрохимического обследования полей.","Доломитовую муку завозим автотранспортом, при необходимости храним на складе и вносим разбрасывателями с соблюдением требований охраны окружающей среды."],
+  inc:["Приёмка и учёт известковых материалов","Доставка к месту внесения","Внесение по дозе из проектно-сметной документации","Оформление актов по каждому полю"],
+  facts:[["Доза","по ПСД, т/га"],["Материал","доломитовая мука"],["Сезон","после уборки"]]},
+ {id:"szr",ru:"Химическая защита растений",by:"Хімічная абарона раслін",unit:"га",price:"19,20 BYN/га",season:"май – август",scene:{machine:"sprayer",time:"day",ground:"green",seed:9,color:"#2f7d4f"},
+  short:"Обработка посевов гербицидами, фунгицидами и инсектицидами прицепными опрыскивателями.",
+  long:["Выполняем обработку посевов средствами защиты растений, включёнными в Государственный реестр средств защиты растений Республики Беларусь, строго по регламентам применения.","Работаем в утренние и вечерние часы при допустимой скорости ветра. Механизаторы имеют допуск к работе с пестицидами."],
+  inc:["Приготовление рабочего раствора","Опрыскивание по технологической карте хозяйства","Соблюдение санитарных зон и регламентов","Учёт обработанной площади"],
+  facts:[["Ширина захвата","до 24 м"],["Расход раствора","100–300 л/га"],["Сезон","май – август"]]},
+ {id:"sale",ru:"Реализация удобрений и СЗР",by:"Рэалізацыя ўгнаенняў і САР",unit:"т · л",price:"по прейскуранту",season:"круглый год",scene:{machine:"bags",time:"day",ground:"limed",building:"hangar",bx:380,mx:60,my:450,scale:1,seed:4},
+  short:"Азотные, калийные, фосфорные и комплексные удобрения, средства защиты растений.",
+  long:["Поставляем сельскохозяйственным организациям района минеральные удобрения белорусского производства: карбамид, аммиачную селитру, КАС, хлористый калий, комплексные NPK-удобрения, а также средства защиты растений.","Удобрения отгружаются со склада в мягких контейнерах и навалом, с доставкой в хозяйство."],
+  inc:["Подбор удобрений под план хозяйства","Отгрузка со склада в Кобрине","Доставка собственным транспортом","Документы и сертификаты качества"],
+  facts:[["Фасовка","МКР 500–1000 кг"],["Отгрузка","Пн–Пт"],["Доставка","по району"]]},
+ {id:"mech",ru:"Механизированные работы",by:"Механізаваныя работы",unit:"маш.-ч · га",price:"от 75,00 BYN/ч",season:"весна – осень",scene:{machine:"plow",time:"evening",ground:"plowed",seed:11},
+  short:"Вспашка, дискование, культивация, погрузочно-разгрузочные работы.",
+  long:["Выполняем основную и предпосевную обработку почвы, а также погрузочно-разгрузочные работы собственной техникой с опытными механизаторами.","Объёмы и сроки согласовываем с хозяйством заранее, чтобы техника вышла в поле точно к агротехническому сроку."],
+  inc:["Вспашка и дискование","Культивация","Погрузка удобрений и материалов","Работа по графику хозяйства"],
+  facts:[["Тракторы","«Беларус»"],["Оплата","маш.-ч или га"],["Сезон","весна – осень"]]},
+ {id:"trans",ru:"Услуги автотранспорта",by:"Паслугі аўтатранспарту",unit:"т·км · ч",price:"от 2,40 BYN/т·км",season:"круглый год",scene:{machine:"truck",load:"bags",time:"day",ground:"stubble",seed:12,mx:420,my:440,scale:1.1},
+  short:"Перевозка удобрений, известковых материалов и других грузов по району и области.",
+  long:["Перевозим минеральные удобрения, доломитовую муку, зерно и другие сельскохозяйственные грузы автомобилями МАЗ.","Работаем по разовым заявкам и по договорам на сезон."],
+  inc:["Бортовые автомобили и самосвалы","Перевозка по Кобринскому району и Брестской области","Погрузка при необходимости","Оплата за т·км или за час работы"],
+  facts:[["Автомобили","МАЗ"],["Грузы","удобрения, зерно"],["Тариф","т·км / ч"]]},
+ {id:"rent",ru:"Аренда сельхозтехники с экипажем",by:"Арэнда сельгастэхнікі з экіпажам",unit:"маш.-ч",price:"по договору",season:"по заявке",scene:{machine:"tractor",time:"overcast",ground:"green",seed:13},
+  short:"Техника вместе с механизатором на согласованный срок.",
+  long:["Предоставляем тракторы и навесное оборудование вместе с механизатором. Техника обслуживается на собственной ремонтной базе предприятия.","Удобно, когда хозяйству не хватает техники или людей в пиковые периоды полевых работ."],
+  inc:["Трактор с механизатором","Навесное и прицепное оборудование","Топливо – по договорённости","Оплата за машино-час"],
+  facts:[["Срок","от 1 смены"],["Экипаж","механизатор"],["Тариф","маш.-ч"]]},
+ {id:"store",ru:"Хранение удобрений",by:"Захоўванне ўгнаенняў",unit:"т · мес.",price:"6,50 BYN/т·мес",season:"круглый год",scene:{machine:"truck",load:"tent",time:"morning",ground:"limed",building:"hangar",bx:60,mx:560,my:450,scale:.9,seed:15},
+  short:"Хранение минеральных удобрений на складах предприятия.",
+  long:["Принимаем на хранение минеральные удобрения хозяйств в крытых складах с соблюдением требований безопасности и учёта.","Отгрузка – по заявке хозяйства в удобное время."],
+  inc:["Крытые склады","Приёмка и учёт по весу","Отгрузка по заявке","Оплата за тонну в месяц"],
+  facts:[["Склады","крытые"],["Учёт","по весу"],["Тариф","т · мес."]]}
+];
+
+const DEFAULT_NEWS=[
+ {id:"n1",d:"2026-10-12",tag:"Производство",
+  ru:"Завершено осеннее известкование почв на площади свыше 2 400 гектаров в хозяйствах Кобринского района",
+  lead:"Механизированный отряд КУП «Кобринхимсервис» в полном объёме выполнил районный план известкования кислых почв под урожай 2027 года. Работы проводились в строгом соответствии с проектно-сметной документацией.",
+  scene:{machine:"lime",time:"morning",ground:"stubble",seed:51},
+  body:[
+    "В агропромышленном комплексе Кобринского района успешно завершён ключевой этап осенних мелиоративно-агрохимических работ – известкование кислых сельскохозяйственных угодий. Силами механизированного отряда предприятия доломитовая мука внесена на общей площади 2 420 гектаров, что составляет 102% от первоначально запланированного объёма. Основной объём работ пришёлся на поля ОАО «Остромичи», ОАО «Покровский», ОАО «Батчи» и СПК «Восходящая заря».",
+    "Всего в хозяйства района доставлено и распределено свыше 9 800 тонн известковых материалов производства ОАО «Доломит» (карьер «Гралево»). Средняя доза внесения составила от 3,5 до 5,0 тонн на гектар в зависимости от исходного уровня кислотности почвенного покрова (pH от 4,6 до 5,2), определённого специалистами Брестской областной проектно-изыскательской станции агрохимизации.",
+    "На выполнении работ было задействовано 4 высокопроизводительных механизированных звена. В их составе работали энергонасыщенные тракторы МТЗ-1221 и МТЗ-1523 с разбрасывателями РУ-7000 и МВУ-6, погрузчики «Амкодор-342В», а также автоколонна большегрузных самосвалов МАЗ автотранспортного участка предприятия, обеспечивавшая бесперебойную транспортировку доломитовой муки непосредственно к полевым буртам.",
+    "Своевременное известкование позволяет оптимизировать почвенную среду, повысить коэффициент усвоения азотно-фосфорно-калийных удобрений зерновыми и кормовыми культурами на 25–35%, а также предотвратить деградацию пахотных земель. Мероприятия профинансированы за счёт средств республиканского и областного бюджетов в рамках Государственной программы «Аграрный бизнес»."
+  ]},
+ {id:"n2",d:"2026-10-09",tag:"Идеологическая работа",
+  ru:"В трудовом коллективе предприятия прошёл Единый день информирования",
+  lead:"В актовом зале административного корпуса предприятия состоялась встреча трудового коллектива с информационной группой Кобринского районного исполнительного комитета.",
+  cover:["ЕДИ","Октябрь 2026","red"],
+  body:[
+    "9 октября 2026 года в КУП «Кобринхимсервис» состоялся очередной Единый день информирования. В мероприятии приняли участие работники администрации, механизаторы, водители автотранспортного участка и складские специалисты предприятия. Перед собравшимися выступили члены районной информационно-пропагандистской группы Кобринского райисполкома.",
+    "Главными темами обсуждения стали приоритетные направления социально-экономического развития Брестской области, обеспечение продовольственной безопасности Республики Беларусь, а также итоги работы агропромышленного комплекса Кобринского района в текущем сельскохозяйственном году. Особое внимание было уделено роли специализированных агрохимических предприятий в сохранении плодородия земель и внедрении энергоэффективных технологий.",
+    "В ходе открытого диалога директор предприятия Юрий Николаевич Калиновский подвёл предварительные производственные итоги работы коллектива за 9 месяцев 2026 года. Было отмечено выполнение целевых показателей по производительности труда, модернизации машинно-тракторного парка и соблюдению нормативов охраны труда.",
+    "Работники предприятия смогли задать волнующие вопросы, касающиеся благоустройства микрорайона улицы Пролетарской, транспортного сообщения и развития социальной инфраструктуры Кобрина. Все поступившие обращения зафиксированы и приняты к рассмотрению."
+  ]},
+ {id:"n3",d:"2026-10-06",tag:"Профком",
+  ru:"Чествование ветеранов труда и лучших работников ко Дню работников сельского хозяйства",
+  lead:"Первичная профсоюзная организация предприятия провела торжественное собрание, посвящённое ветеранам производства и передовикам осенней кампании.",
+  cover:["Профсоюз","Забота и почёт","brown"],
+  body:[
+    "В преддверии профессионального праздника первичная профсоюзная организация Белорусского профессионального союза работников агропромышленного комплекса КУП «Кобринхимсервис» организовала встречу с ветеранами труда предприятия, отдавшими любимому делу более 25 лет жизни.",
+    "Председатель профкома совместно с руководством предприятия выразил слова искренней благодарности ветеранам агрохимической службы, бывшим механизаторам, водителям и инженерно-техническим работникам. Особые поздравления прозвучали в адрес женщин-ветеранов, чей трудовой путь стал примером преданности предприятию и родной земле. Всем заслуженным ветеранам вручены памятные подарки и оказана материальная помощь в соответствии с нормами коллективного договора.",
+    "Кроме того, в рамках смотра-конкурса профессионального мастерства почётными грамотами профсоюзного комитета и денежными премиями награждены передовики осенних полевых работ 2026 года, продемонстрировавшие высочайшую выработку и безукоризненное соблюдение правил безопасности.",
+    "Также профком утвердил график выделения льготных оздоровительных путёвок для работников предприятия и членов их семей в санатории системы «Белпрофсоюзкурорт» на четвёртый квартал 2026 года и первый квартал 2027 года."
+  ]},
+ {id:"n4",d:"2026-10-01",tag:"Кадры",
+  ru:"Предприятие расширяет штат: открыты вакансии механизаторов и водителей",
+  lead:"В связи с обновлением машинно-тракторного парка и увеличением объёмов работ КУП «Кобринхимсервис» приглашает на постоянную работу квалифицированных специалистов.",
+  scene:{machine:"tractor",time:"morning",ground:"green",seed:41},
+  body:[
+    "КУП «Кобринхимсервис» проводит набор квалифицированных сотрудников для работы в механизированном отряде и на автотранспортном участке предприятия. В связи с плановым расширением спектра агрохимических услуг и поступлением новой техники открыты следующие вакансии: тракторист-машинист сельскохозяйственного производства (категории A, B, D, E), водитель автомобиля (категория CE, автомобили МАЗ), а также агроном-агрохимик с опытом работы в защите растений.",
+    "Предприятие гарантирует: официальное трудоустройство в соответствии с Трудовым кодексом Республики Беларусь, стабильную и конкурентную заработную плату (от 1 800 до 2 200 BYN с регулярным премированием по итогам выполнения сезонных заданий), полный социальный пакет, предоставление спецодежды и средств индивидуальной защиты.",
+    "Иногородним работникам содействуем в решении жилищного вопроса, предоставляем возможность повышать квалификацию и категории за счёт предприятия, а также право на льготное оздоровление в ведомственных санаториях.",
+    "Собеседования проводятся ежедневно по адресу: г. Кобрин, ул. Пролетарская, 183 (отдел кадров, 2-й этаж). Дополнительную информацию можно получить по телефону приёмной +375 1642 6-26-72 или в разделе «Вакансии» официального сайта."
+  ]},
+ {id:"n5",d:"2026-09-26",tag:"Производство",
+  ru:"Начата осенняя отгрузка и внесение фосфорно-калийных удобрений под зяблевую вспашку",
+  lead:"Специалисты агрохимической службы приступили к внесению калийных и комплексных удобрений на полях хозяйств Кобринского района под урожай яровых культур.",
+  scene:{machine:"spreader",time:"evening",ground:"stubble",seed:31},
+  body:[
+    "С третьей декады сентября механизированные звенья предприятия приступили к плановому внесению хлористого калия и аммонизированного суперфосфата под глубокую зяблевую вспашку. Работы ведутся в хозяйствах района в соответствии с технологическими графиками, утверждёнными управлением по сельскому хозяйству и продовольствию Кобринского райисполкома.",
+    "Внесение фосфорных и калийных туков в осенний период позволяет питательным веществам оптимально распределиться в корнеобитаемом слое почвы за осенне-зимний период, что обеспечивает мощное стартовое развитие яровых зерновых, сахарной свёклы и кукурузы весной будущего года.",
+    "Предприятие использует агрегаты с шириной захвата до 24 метров, оснащённые бортовыми компьютерами для точного дозирования гранулированных удобрений. Это исключает огрехи и перерасход дорогостоящих туков, гарантируя хозяйствам максимальную окупаемость затрат.",
+    "Заявки на внесение удобрений и предоставление погрузочной техники на октябрь-ноябрь принимаются диспетчерской службой предприятия и через интерактивную форму на официальном сайте."
+  ]},
+ {id:"n6",d:"2026-09-18",tag:"Антикоррупция",
+  ru:"Итоги заседания комиссии по противодействию коррупции за III квартал 2026 года",
+  lead:"В КУП «Кобринхимсервис» состоялось плановое заседание антикоррупционной комиссии с рассмотрением вопросов закупочной деятельности и расходования ГСМ.",
+  cover:["Антикоррупция","Протокол № 3",""],
+  body:[
+    "18 сентября 2026 года под председательством руководителя предприятия состоялось очередное заседание комиссии по противодействию коррупции КУП «Кобринхимсервис» по итогам работы за третий квартал 2026 года. В заседании приняли участие члены комиссии, руководители структурных подразделений и материально ответственные лица.",
+    "В соответствии с утверждённой повесткой дня комиссия рассмотрела следующие вопросы: 1) Соблюдение законодательства о государственных закупках товаров (работ, услуг) при приобретении запасных частей к сельскохозяйственной технике и оборудования; 2) Анализ эффективности системы контроля за расходованием горюче-смазочных материалов с использованием спутникового мониторинга техники (систем GPS); 3) Состояние претензионно-исковой работы по возврату просроченной дебиторской задолженности за оказанные агрохимические услуги.",
+    "По итогам рассмотрения фактов нарушений антикоррупционного законодательства не установлено. Комиссией утверждён план профилактических мероприятий на четвёртый квартал 2026 года, в том числе проведение внеплановой инвентаризации остатков товарно-материальных ценностей на складах минеральных удобрений.",
+    "Информация о дате и повестке дня очередного заседания комиссии в соответствии с Типовым положением будет размещена в специальном разделе сайта не позднее чем за 5 календарных дней до даты его проведения."
+  ]},
+ {id:"n7",d:"2026-09-10",tag:"Производство",
+  ru:"Складской комплекс предприятия подготовлен к приёмке минеральных удобрений зимнего завоза",
+  lead:"Завершены работы по капитальному и текущему ремонту прирельсовых складов предприятия емкостью свыше 12 000 тонн.",
+  scene:{machine:"bags",time:"day",ground:"limed",building:"hangar",bx:380,mx:60,my:450,scale:1,seed:61},
+  body:[
+    "На центральной производственной базе КУП «Кобринхимсервис» по улице Пролетарской, 183 завершён комплекс регламентных мероприятий по подготовке складского хозяйства к приёмке, накоплению и безопасному хранению минеральных удобрений под яровой сев 2027 года.",
+    "Предприятие располагает капитальными прирельсовыми складами единовременного хранения вместимостью до 12 000 тонн твёрдых минеральных удобрений, а также резервуарным парком для жидких азотных удобрений (КАС-32). В рамках подготовки выполнена герметизация кровли и стеновых панелей, ревизия вентиляционных шахт, антикоррозийная обработка металлических конструкций, а также государственная метрологическая поверка 60-тонных автомобильных весов и узла механизированной разгрузки вагонов-минераловозов.",
+    "Заключены прямые договоры на плановую поставку азотных, фосфорных и комплексных NPK-удобрений с ведущими отечественными производителями – ОАО «Гродно Азот» и ОАО «Гомельский химический завод». Поставки железнодорожным транспортом начнутся в строгом соответствии с утверждёнными графиками Брестского облисполкома.",
+    "Сельскохозяйственные организации Кобринского и соседних районов приглашаются к согласованию предварительных графиков завоза и договоров на ответственное хранение минеральных удобрений."
+  ]}
+];
+
+const DEFAULT_VACANCIES=[
+ {id:"v1",title:"Тракторист-машинист сельскохозяйственного производства",req:"Категории A, B, D, E · опыт от 1 года",salary:"от 1 800 BYN",scene:{machine:"tractor",time:"morning",ground:"green",seed:41}},
+ {id:"v2",title:"Водитель автомобиля",req:"Категория CE · МАЗ",salary:"от 1 900 BYN",scene:{machine:"truck",load:"tent",time:"day",ground:"stubble",seed:82,mx:420,my:440,scale:1.1}},
+ {id:"v3",title:"Агроном-агрохимик",req:"Высшее профильное образование",salary:"по результатам собеседования",scene:{machine:"spreader",time:"day",ground:"stubble",seed:83}}
+];
+
+const DEFAULT_LEADERS=[
+ {id:"dir",role:"Директор",name:"Калиновский Юрий Николаевич",phone:"+375 1642 3-50-59",reception:"1-я и 3-я среда месяца, 8:00–13:00"},
+ {id:"dep",role:"Заместитель директора",name:"Уточняется (на согласовании)",phone:"+375 1642 6-26-72",reception:"каждый вторник, 14:00–17:00"},
+ {id:"acc",role:"Главный бухгалтер",name:"Уточняется (на согласовании)",phone:"+375 1642 6-26-85",reception:"Пн–Пт 8:00–17:00"}
+];
+
+const DEFAULT_ANTICOR={
+ meeting:"22 декабря 2026 года, 14:00, г. Кобрин, ул. Пролетарская, 183, кабинет директора.",
+ docs:[
+   "Приказ о создании и составе комиссии по противодействию коррупции",
+   "Положение о комиссии по противодействию коррупции",
+   "План работы комиссии на 2026 год",
+   "Выписки из протоколов заседаний",
+   "Закон Республики Беларусь от 15.07.2015 № 305-З «О борьбе с коррупцией»"
+ ]
+};
+
+const DEFAULT_CONTACTS={
+ address:"225306, Брестская обл., г. Кобрин, ул. Пролетарская, 183",
+ hours:"Пн–Пт 8:00–17:00, обед 13:00–14:00",
+ reception:"+375 1642 6-26-72",
+ director:"+375 1642 3-50-59",
+ fax:"+375 1642 3-57-59",
+ accountant:"+375 1642 6-26-85",
+ lawyer:"+375 1642 9-20-31",
+ email:"2300599@brest.by"
+};
+
+/* Data getters and setters */
+const getServices=()=>store.get("services_data",DEFAULT_SERVICES);
+const saveServices=d=>store.set("services_data",d);
+
+const getNews=()=>store.get("news_data",DEFAULT_NEWS);
+const saveNews=d=>store.set("news_data",d);
+
+const getVacancies=()=>store.get("vacancies_data",DEFAULT_VACANCIES);
+const saveVacancies=d=>store.set("vacancies_data",d);
+
+const getLeaders=()=>store.get("leaders_data",DEFAULT_LEADERS);
+const saveLeaders=d=>store.set("leaders_data",d);
+
+const getAnticor=()=>store.get("anticor_data",DEFAULT_ANTICOR);
+const saveAnticor=d=>store.set("anticor_data",d);
+
+const getContacts=()=>store.get("contacts_data",DEFAULT_CONTACTS);
+const saveContacts=d=>store.set("contacts_data",d);
+
+function resetAllData(){
+ ["services_data","news_data","vacancies_data","leaders_data","anticor_data","contacts_data","adm_tab"].forEach(k=>store.del(k));
+ toast("Все данные сброшены к исходному образцу!");
+ render();
+}
+
+const svcById=id=>getServices().find(s=>s.id===id);
+const allNews=()=>getNews().slice().sort((a,b)=>a.d<b.d?1:-1);
+
+const MONTHS_RU=["янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек"],MONTHS_BY=["сту","лют","сак","кра","мая","чэр","ліп","жні","вер","кас","ліс","сне"];
+const MONTHS_GEN=["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
+const CAL=[{label:"Подкормка озимых азотом",from:3,to:4,c:""},{label:"Химическая защита посевов",from:5,to:8,c:"b2"},{label:"Внесение P и K под зябь, известкование",from:8,to:11,c:"b3"},{label:"Завоз удобрений, договоры, ремонт техники",from:12,to:2,c:"b2"}];
+const COMPANY=[["about","О предприятии"],["contacts","Контакты"],["anticor","Борьба с коррупцией"],["ideology","Идеологическая работа"],["profkom","Профком"],["vacancies","Вакансии"]];
+const INFO=[["appeals","Обращения граждан и юридических лиц"],["adminproc","Административные процедуры"]];
+
+/* ---------- helpers ---------- */
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt=iso=>iso.split("-").reverse().join(".");
+const dlong=iso=>{const p=iso.split("-");return `${+p[2]} ${MONTHS_GEN[+p[1]-1]} ${p[0]}`};
+
+function cover(c){return `<div class="img"><div class="cover ${c[2]||""}"><div class="orn"></div><div><b>${esc(c[0])}</b><br><span>${esc(c[1])}</span></div></div></div>`}
+function newsImg(n,cls){return n.cover?cover(n.cover):n.scene?img("news-"+n.id,n.scene,n.ru,cls):cover([n.tag||"Новости",fmt(n.d),""])}
+function newsCard(n,showDel){
+  const canDel=showDel&&(viewMode==="admin");
+  return `<div class="card news-card" style="position:relative">
+    ${canDel?`<button type="button" class="card-quick-del quick-del-news admin-only" data-id="${n.id}" title="Удалить новость">🗑 Удалить</button>`:""}
+    <a href="#news-${n.id}" style="text-decoration:none;color:inherit;display:block">
+      ${newsImg(n)}
+      <div class="body"><time datetime="${n.d}">${dlong(n.d)} · ${esc(n.tag||"Новости")}</time><h3>${esc(n.ru)}</h3><p>${esc(n.lead||"")}</p></div>
+    </a>
+  </div>`;
+}
+function svcCard(s){return `<a class="card svc" href="#svc-${s.id}">${img("svc-"+s.id,s.scene,s.ru)}<div class="body"><h3>${esc(lang==="by"?s.by:s.ru)}</h3><p>${esc(s.short)}</p><span class="unit">${esc(s.price||"по прейскуранту")} · ${s.unit}</span></div></a>`}
+const crumbs=(title,parent)=>`<div class="crumbs"><a href="#home">${t("home","Главная")}</a> / ${parent?parent+" / ":""}${esc(title)}</div>`;
+function td(label,v,cls){return `<td data-label="${label}"${cls?` class="${cls}"`:""}>${v}</td>`}
+function portrait(seed){const hair=["#3b2a20","#6b5a4a","#9a9a94"][seed%3];return `<div class="portrait img"><svg viewBox="0 0 92 112" aria-hidden="true"><rect width="92" height="112" fill="#dfe4dc"/><rect y="70" width="92" height="42" fill="#cfd6cc"/><path d="M14 112c2-24 16-36 32-36s30 12 32 36z" fill="#2c3e50"/><path d="M38 78l8 14 8-14z" fill="#f1f1ee"/><path d="M44 80l2 22 2-22z" fill="#7b2d2d"/><rect x="40" y="62" width="12" height="14" fill="#e3b99a"/><ellipse cx="46" cy="48" rx="17" ry="20" fill="#eac3a3"/><path d="M29 44c0-14 8-21 17-21s17 7 17 21c-3-7-9-10-17-10s-14 3-17 10z" fill="${hair}"/></svg></div>`}
+function rail(group){
+ const links=group==="info"?INFO:COMPANY;
+ const c=getContacts();
+ return `<aside class="rail"><div class="card"><h3>${group==="info"?t("info","Информация"):t("company","Предприятие")}</h3><nav>${links.map(l=>`<a href="#${l[0]}"${l[0]===route?' aria-current="page"':""}>${t(l[0],l[1])}</a>`).join("")}</nav></div>
+ <div class="card"><h3>Электронные обращения</h3><p style="font-size:.9rem">Подаются только через систему «обращения.бел».</p><a class="btn" href="https://обращения.бел" target="_blank" rel="noopener">Перейти на обращения.бел</a></div>
+ <div class="card"><h3>${t("workHours","Режим работы")}</h3><p style="font-size:.9rem">${esc(c.hours)}<br>Сб, Вс – выходные</p></div></aside>`}
+const page=(title,parent,group,body)=>crumbs(title,parent)+`<div class="page"><div class="prose fade"><h1>${esc(title)}</h1>${body}</div>${rail(group)}</div>`;
+/* ---------- Official State & Regional Vector Emblems ---------- */
+function icoGov(){
+  return `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Герб Республики Беларусь">
+    <circle cx="24" cy="24" r="23" fill="#ffffff" stroke="#e2e8f0"/>
+    <path d="M14 36c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#2563eb" stroke-width="1.2" fill="#dbeafe"/>
+    <path d="M18 36a6 6 0 0 1 12 0" stroke="#2563eb" stroke-width="1" fill="none"/>
+    <path d="M24 23v-5M19 25l-3-4M29 25l3-4M15 29l-5-1M33 29l5-1" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="24" cy="26" r="4.5" fill="#fbbf24"/>
+    <path d="M22 20.5l2.5-1.5 3 1 2 2.5-1 3-3 1.5-2.5-.5-1.5-2.5 0.5-4z" fill="#15803d" stroke="#166534" stroke-width=".8"/>
+    <path d="M11 36C9 28 12 18 20 12" stroke="#d97706" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M37 36C39 28 36 18 28 12" stroke="#d97706" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <circle cx="11" cy="25" r="1.8" fill="#ec4899"/>
+    <circle cx="37" cy="25" r="1.8" fill="#3b82f6"/>
+    <circle cx="13" cy="20" r="1.6" fill="#3b82f6"/>
+    <circle cx="35" cy="20" r="1.6" fill="#ec4899"/>
+    <path d="M24 6l1.2 2.8 3 .2-2.3 2 .7 3-2.6-1.6-2.6 1.6.7-3-2.3-2 3-.2L24 6z" fill="#dc2626"/>
+    <path d="M14 38h20v4H14z" fill="#15803d"/>
+    <path d="M14 35h20v3H14z" fill="#dc2626"/>
+    <path d="M10 39l4-3v6l-4 1z" fill="#dc2626"/>
+    <path d="M38 39l-4-3v6l4 1z" fill="#dc2626"/>
+  </svg>`;
+}
+
+function icoPravo(){
+  return `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="pravo.by">
+    <rect width="48" height="48" rx="10" fill="#0f2942"/>
+    <path d="M24 7l13 4v12c0 9-6 15-13 18-7-3-13-9-13-18V11l13-4z" fill="#1e3a5f" stroke="#eab308" stroke-width="1.8"/>
+    <path d="M24 14v16M18 19h12" stroke="#facc15" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M15 24l3-5 3 5c0 1.5-1.3 2.5-3 2.5s-3-1-3-2.5z" fill="#facc15"/>
+    <path d="M27 24l3-5 3 5c0 1.5-1.3 2.5-3 2.5s-3-1-3-2.5z" fill="#facc15"/>
+    <path d="M20 32l4-2 4 2v3l-4-1.5-4 1.5v-3z" fill="#ffffff"/>
+    <circle cx="24" cy="14" r="1.5" fill="#facc15"/>
+  </svg>`;
+}
+
+function icoAppeals(){
+  return `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="обращения.бел">
+    <rect width="48" height="48" rx="10" fill="#dc2626"/>
+    <path d="M0 0h12v48H0z" fill="#991b1b"/>
+    <path d="M6 6l4 4-4 4-4-4 4-4zm0 12l4 4-4 4-4-4 4-4zm0 12l4 4-4 4-4-4 4-4zm0 12l4 4-4 4-4-4 4-4z" fill="#ffffff"/>
+    <rect x="16" y="14" width="26" height="20" rx="3" fill="#ffffff" stroke="#fee2e2" stroke-width="1"/>
+    <path d="M16 16l13 10 13-10" stroke="#dc2626" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
+    <rect x="23" y="27" width="18" height="6.5" rx="2" fill="#15803d"/>
+    <text x="32" y="32" fill="#ffffff" font-size="5" font-weight="bold" font-family="sans-serif" text-anchor="middle">.БЕЛ</text>
+  </svg>`;
+}
+
+function icoKobrin(){
+  return `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Герб Кобрина">
+    <rect width="48" height="48" rx="10" fill="#0284c7"/>
+    <path d="M24 6c8 0 16 2 16 14 0 12-8 19-16 22-8-3-16-10-16-22 0-12 8-14 16-14z" fill="#0369a1" stroke="#facc15" stroke-width="1.8"/>
+    <circle cx="21" cy="16" r="4.5" stroke="#facc15" stroke-width="1.4" fill="none"/>
+    <circle cx="31" cy="18" r="4" stroke="#facc15" stroke-width="1.4" fill="none"/>
+    <circle cx="18" cy="22" r="2.5" stroke="#facc15" stroke-width="1.2" fill="none"/>
+    <path d="M28 21c0-2 1.5-3.5 3-3.5s3 1.5 3 3.5v9c0 2-2 4-4 4h-2z" fill="#166534"/>
+    <circle cx="31" cy="18" r="2" fill="#fde68a"/>
+    <path d="M17 21c0-2.5 2-4 4-4s4 1.5 4 4v14h-8z" fill="#dc2626"/>
+    <circle cx="21" cy="16" r="2.2" fill="#fde68a"/>
+    <path d="M16 25c0-1 1-2 2-2h4v11h-6z" fill="#1e40af" opacity=".7"/>
+    <circle cx="18" cy="22" r="1.5" fill="#fde68a"/>
+    <path d="M16 24h4v6h-4z" fill="#ffffff"/>
+    <path d="M16 38c4 2 12 2 16 0" stroke="#facc15" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>`;
+}
+
+function icoRating(){
+  return `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="rating.gov.by">
+    <rect width="48" height="48" rx="10" fill="#15803d"/>
+    <circle cx="24" cy="22" r="14" fill="#166534" stroke="#facc15" stroke-width="2"/>
+    <path d="M24 13l2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5-3.6-3.5 5-.7L24 13z" fill="#facc15"/>
+    <circle cx="16" cy="16" r="1.2" fill="#facc15"/>
+    <circle cx="32" cy="16" r="1.2" fill="#facc15"/>
+    <circle cx="14" cy="24" r="1.2" fill="#facc15"/>
+    <circle cx="34" cy="24" r="1.2" fill="#facc15"/>
+    <path d="M19 33l5-3 5 3v7l-5-2-5 2v-7z" fill="#dc2626"/>
+    <path d="M21 33l3-2 3 2v6l-3-1.5-3 1.5v-6z" fill="#15803d"/>
+  </svg>`;
+}
+
+function icoYear(){
+  return `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="2026 Год белорусской женщины">
+    <rect width="48" height="48" rx="10" fill="#dc2626"/>
+    <circle cx="24" cy="24" r="21" fill="#991b1b" stroke="#fecaca" stroke-width="1"/>
+    <circle cx="24" cy="16" r="5" fill="#2563eb" opacity=".3"/>
+    <path d="M24 11v10M19 16h10M20.5 12.5l7 7M27.5 12.5l-7 7" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M15 28c3-8 12-10 18-10" stroke="#facc15" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+    <circle cx="18" cy="22" r="1.4" fill="#facc15"/>
+    <circle cx="22" cy="19" r="1.4" fill="#facc15"/>
+    <circle cx="26" cy="18" r="1.4" fill="#facc15"/>
+    <rect x="10" y="27" width="28" height="11" rx="3" fill="#15803d"/>
+    <text x="24" y="35.5" fill="#ffffff" font-size="8.5" font-weight="900" font-family="sans-serif" text-anchor="middle" letter-spacing="1">2026</text>
+  </svg>`;
+}
+
+const banner=(u,ico,a,b,isExt=true)=>`<a class="banner" href="${u}" ${isExt?'target="_blank" rel="noopener"':""}><span class="b-ico">${ico}</span><span class="b-text"><b>${esc(a)}</b><span class="b-desc">${esc(b)}</span></span></a>`;
+
+/* ---------- PAGES ---------- */
+const P={};
+
+P.home=()=>{
+ const m=new Date().getMonth()+1,M=lang==="by"?MONTHS_BY:MONTHS_RU;
+ let cal=`<div class="cal"><div class="cal-row">`+M.map((x,i)=>`<div class="cal-m${i+1===m?" now":""}">${x}</div>`).join("");
+ CAL.forEach((c,k)=>{const spans=c.from<=c.to?[[c.from,c.to]]:[[c.from,12],[1,c.to]];cal+=`<div class="cal-label" style="grid-row:${2*k+2}">${c.label}</div>`;spans.forEach(sp=>{cal+=`<div class="cal-bar ${c.c}" style="grid-row:${2*k+3};grid-column:${sp[0]} / ${sp[1]+1}"></div>`})});
+ const cur=CAL.filter(c=>c.from<=c.to?(m>=c.from&&m<=c.to):(m>=c.from||m<=c.to)).map(c=>c.label).join("; ")||"межсезонье";
+ cal+=`</div><div class="now-box"><b>Сейчас:</b> <span>${cur}.</span> <a href="#order">Оставить заявку →</a></div></div>`;
+ const n=allNews();
+ const svcs=getServices();
+ const leaders=getLeaders();
+ const dir=leaders[0]||DEFAULT_LEADERS[0];
+
+ return `<section class="sec fade"><div class="sec-head"><h2>${t("ourServices","Наши услуги")}</h2><a href="#services">${t("allServices","Все услуги")} →</a></div><div class="grid g3 rail-x">${svcs.slice(0,6).map(svcCard).join("")}</div></section>
+ <section class="sec"><div class="sec-head"><h2>${t("howOrder","Как заказать работы")}</h2></div><div class="steps">
+  <div class="step"><b class="n">1</b><h3>Заявка</h3><p>Позвоните в приёмную, отправьте письмо или соберите заявку на сайте за минуту.</p></div>
+  <div class="step"><b class="n">2</b><h3>Согласование</h3><p>Агроном предприятия уточнит объёмы, поля и сроки, рассчитает стоимость по прейскуранту.</p></div>
+  <div class="step"><b class="n">3</b><h3>Договор и график</h3><p>Заключаем договор и ставим технику в график с учётом агротехнических сроков.</p></div>
+  <div class="step"><b class="n">4</b><h3>Работы и акт</h3><p>Выполняем работы и оформляем акт с фактической площадью и объёмом.</p></div></div></section>
+ <section class="sec"><div class="sec-head"><h2>${t("calTitle","Агрохимический календарь")}</h2><span class="tag">Кобринский район</span></div>${cal}</section>
+ <section class="sec"><div class="sec-head"><h2>${t("lastNews","Новости")}</h2><a href="#news">${t("allNews","Все новости")} →</a></div><div class="grid g3 rail-x">${n.slice(0,3).map(x=>newsCard(x,false)).join("")}</div></section>
+ <section class="sec"><div class="two-col">
+  <a class="card" href="#about" style="padding:0;overflow:hidden;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;justify-content:space-between">${img("about-office",{time:"morning",ground:"green",building:"office",bx:300,seed:21,trees:true},"Административное здание предприятия")}<div style="padding:16px;flex:1;display:flex;flex-direction:column;justify-content:center"><h3>О предприятии</h3><p style="color:var(--muted);font-size:.92rem;margin-top:6px">Агрохимическое обслуживание сельскохозяйственных организаций Кобринского района: удобрения, известкование, защита растений, техника и транспорт.</p><span style="margin-top:10px;font-weight:600;color:var(--field-2);font-size:.9rem">Подробнее о предприятии →</span></div></a>
+  <div class="grid" style="gap:16px"><div class="card"><h3>${t("leaders","Руководство")}</h3><div class="person">${portrait(0)}<div><b>${esc(dir.name)}</b><br><span style="color:var(--muted);font-size:.9rem">${esc(dir.role)}</span><br><span style="font-size:.9rem">${esc(dir.phone)}</span></div></div><a href="#appeals" style="font-size:.9rem">График личного приёма →</a></div>
+  <div class="card"><h3>Электронные обращения</h3><p style="font-size:.9rem">С 2 января 2023 года электронные обращения подаются только через систему «обращения.бел».</p><a class="btn" href="https://обращения.бел" target="_blank" rel="noopener">Подать обращение</a></div></div></div></section>
+ <section class="sec"><div class="sec-head"><h2>${t("usefulLinks","Полезные ссылки")}</h2></div><div class="banners">${
+   banner("https://president.gov.by",icoGov(),"Портал Президента","Республики Беларусь")
+   +banner("https://pravo.by",icoPravo(),"Национальный правовой портал","pravo.by")
+   +banner("https://обращения.бел",icoAppeals(),"обращения.бел","Электронные обращения")
+   +banner("https://kobrin.brest-region.gov.by",icoKobrin(),"Кобринский райисполком","Вышестоящая организация")
+   +banner("https://rating.gov.by",icoRating(),"Рейтинговая оценка","Портал качества rating.gov.by")
+   +banner("#ideology",icoYear(),"2026 – Год белорусской женщины","Указ № 1 от 01.01.2026",false)
+ }</div></section>`;
+};
+
+P.services=()=>{
+ const svcs=getServices();
+ return crumbs(t("services","Услуги"))+`<div class="fade">
+  <div class="sec-head">
+    <h1>${t("services","Услуги")}</h1>
+    <a href="#admin" class="btn ghost admin-only">⚙️ Управление услугами и тарифами (CMS)</a>
+  </div>
+  <p style="max-width:70ch;margin-top:10px;color:var(--muted)">Агрохимическое обслуживание, техника и транспорт для сельскохозяйственных организаций Кобринского района. Тарифы – по действующему прейскуранту предприятия (п. 7.4 Положения, утв. постановлением Совета Министров № 645).</p>
+  <div class="grid g3" style="margin-top:20px">${svcs.map(svcCard).join("")}</div>
+  <section class="sec"><div class="sec-head"><h2>Прейскурант</h2><span class="tag">актуальный тариф</span></div><div class="t-wrap"><table class="t"><thead><tr><th>Услуга</th><th>Единица</th><th>Тариф, BYN без НДС</th><th style="width:120px" class="admin-only">Действие</th></tr></thead><tbody>${svcs.map(s=>`<tr>${td("Услуга",`<a href="#svc-${s.id}">${s.ru}</a>`)}${td("Единица",s.unit,"num")}${td("Тариф",s.price||"по прейскуранту","num")}${td("Управление",`<a href="#admin" class="btn ghost btn-sm">✎ Изменить</a>`,"num admin-only")}</tr>`).join("")}</tbody></table></div></section></div>`;
+};
+
+function svcPage(id){const s=svcById(id);if(!s)return P.services();
+ return crumbs(s.ru,`<a href="#services">${t("services","Услуги")}</a>`)+`<div class="fade"><div class="svc-hero">${img("svc-"+s.id,s.scene,s.ru)}<div><p class="eyebrow">${s.season}</p><h1 style="margin-top:6px">${esc(lang==="by"?s.by:s.ru)}</h1><p style="margin-top:12px;color:var(--muted)">${esc(s.short)}</p><div class="facts" style="margin-top:16px">${s.facts?s.facts.map(f=>`<div>${f[0]}<b>${f[1]}</b></div>`).join(""):`<div>Тариф<b>${esc(s.price||"по прейскуранту")}</b></div>`}</div><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px"><a class="btn wheat" href="#order" data-svc="${s.id}">Заявка на эту услугу</a><a class="btn ghost" href="tel:+375164262672">+375 1642 6-26-72</a><a class="btn ghost admin-only" href="#admin">✎ Изменить в CMS</a></div></div></div>
+ <div class="page"><div class="prose">${(s.long||[s.short]).map(p=>`<p>${p}</p>`).join("")}<h2>Что входит</h2><ul>${(s.inc||["Выполнение работ по графику хозяйства","Оформление акта выполненных работ"]).map(i=>`<li>${i}</li>`).join("")}</ul><h2>Стоимость</h2><p>Тариф: <b>${esc(s.price||"по прейскуранту")}</b>, единица расчёта – <b>${s.unit}</b>. Точную стоимость рассчитаем после уточнения объёмов и удалённости полей.</p></div>
+ <aside class="rail"><div class="card"><h3>Другие услуги</h3><nav>${getServices().filter(x=>x.id!==s.id).map(x=>`<a href="#svc-${x.id}">${x.ru}</a>`).join("")}</nav></div></aside></div></div>`}
+
+P.order=()=>{const pre=store.get("svc","fert");const svcs=getServices();const c=getContacts();return crumbs("Заявка на работы")+`<div class="fade"><h1>Заявка на работы</h1><p style="max-width:70ch;margin-top:10px;color:var(--muted)">Соберите заявку и отправьте её на ${esc(c.email)} или продиктуйте по телефону приёмной. Сайт не сохраняет и не передаёт введённые данные.</p>
+ <div class="builder" style="margin-top:18px"><form id="order" class="form-grid" novalidate>
+ <label class="field" style="grid-column:1/-1" for="o-svc">Услуга<select id="o-svc">${svcs.map(s=>`<option value="${s.id}"${s.id===pre?" selected":""}>${s.ru}</option>`).join("")}</select></label>
+ <label class="field" for="o-org">Хозяйство<input id="o-org" value="СПК «Пример»"></label>
+ <label class="field" for="o-area">Объём (${"га"})<input id="o-area" type="number" inputmode="numeric" min="1" value="120"></label>
+ <label class="field" for="o-crop">Культура / поле<input id="o-crop" value="озимые, поле № 7"></label>
+ <label class="field" for="o-date">Желаемые сроки<input id="o-date" type="date" value="2026-10-20"></label>
+ <label class="field" style="grid-column:1/-1" for="o-note">Примечание<textarea id="o-note" rows="2">Удобрение хозяйства, требуется погрузка</textarea></label>
+ </form><div><div class="out" id="o-out" aria-live="polite"></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px"><button type="button" class="btn wheat" id="o-copy">Скопировать заявку</button><a class="btn ghost" href="tel:+375164262672">Позвонить</a></div><p style="font-size:.85rem;color:var(--muted);margin-top:8px">E-mail: ${esc(c.email)} · факс ${esc(c.fax)}</p></div></div></div>`};
+
+P.news=()=>{
+ const isAdmin=viewMode==="admin";
+ return crumbs(t("news","Новости"))+`<div class="fade">
+  <div class="sec-head">
+    <div>
+      <h1>${t("news","Новости")}</h1>
+      <p style="color:var(--muted);font-size:.9rem;margin-top:4px">Официальные сообщения, события и объявления КУП «Кобринхимсервис»</p>
+    </div>
+    ${isAdmin?`<div style="display:flex;gap:8px;flex-wrap:wrap" class="admin-only">
+      <a href="#admin" class="btn" style="text-decoration:none">⚙️ Панель управления (CMS)</a>
+      <button type="button" class="btn ghost" id="ed-open">✎ Быстрая публикация</button>
+    </div>`:""}
+  </div>
+  ${isAdmin?`<p class="notice admin-only" style="margin-bottom:16px"><b>Режим редактора:</b> Положение № 645 требует обновлять сайт не реже двух раз в неделю. Вы можете опубликовать новость за минуту через кнопку выше или удалить неактуальную (кнопка «Удалить» на карточке).</p>
+  <div id="editor-slot" class="admin-only"></div>`:""}
+  <div class="grid g3" id="news-list">${allNews().map(x=>newsCard(x,isAdmin)).join("")}</div></div>`;
+};
+
+function newsPage(id){
+ const n=allNews().find(x=>x.id===id);if(!n)return P.news();
+ const rest=allNews().filter(x=>x.id!==id).slice(0,3);
+ const isAdmin=viewMode==="admin";
+ return crumbs(n.ru,`<a href="#news">${t("news","Новости")}</a>`)+`<div class="page"><article class="article fade" style="max-width:82ch">
+   <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+     <time class="eyebrow" datetime="${n.d}">${dlong(n.d)}</time>
+     <span class="tag" style="background:var(--wheat-soft);color:var(--field-2);font-weight:700">${esc(n.tag||"Новости")}</span>
+   </div>
+   <h1 style="font-size:clamp(1.5rem,3.2vw,2.2rem);line-height:1.25;margin:6px 0 12px">${esc(n.ru)}</h1>
+   ${newsImg(n)}
+   ${n.lead?`<div style="font-size:1.14rem;line-height:1.75;font-weight:500;color:var(--ink);background:var(--wheat-soft);border-left:4px solid var(--field-2);padding:14px 18px;border-radius:0 10px 10px 0;margin:12px 0 16px">${esc(n.lead)}</div>`:""}
+   <div style="display:flex;flex-direction:column;gap:14px;font-size:1.05rem;line-height:1.8;color:var(--ink)">
+     ${(n.body||[]).map(p=>`<p style="margin:0">${esc(p)}</p>`).join("")}
+   </div>
+   <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)">
+     <i>Пресс-служба КУП «Кобринхимсервис» · Контакты для справок и заявок: +375 1642 6-26-72</i>
+   </div>
+   <div style="display:flex;gap:12px;margin-top:16px;align-items:center;flex-wrap:wrap">
+     <a href="#news" class="btn ghost btn-sm">← Все новости</a>
+     <button type="button" class="btn ghost btn-sm" onclick="window.print()">Распечатать</button>
+     ${isAdmin?`<a href="#admin" class="btn ghost btn-sm admin-only">⚙️ Редактировать в CMS</a>`:""}
+   </div>
+ </article>
+ <aside class="rail">
+   <div class="card"><h3>Другие новости</h3><nav>${rest.map(r=>`<a href="#news-${r.id}">${esc(r.ru)}</a>`).join("")}</nav></div>
+   <div class="card"><h3>Контакты предприятия</h3><p style="font-size:.9rem">г. Кобрин, ул. Пролетарская, 183<br>Приёмная: +375 1642 6-26-72</p><a class="btn" href="#order">Подать заявку</a></div>
+ </aside></div>`;
+}
+
+const FLEET=[["Тракторы «Беларус»","Обработка почвы, работа с прицепными машинами",{machine:"tractor",time:"day",ground:"green",seed:71}],["Разбрасыватели удобрений","Внесение минеральных удобрений и доломитовой муки",{machine:"spreader",time:"morning",ground:"plowed",seed:72}],["Прицепные опрыскиватели","Химическая защита растений",{machine:"sprayer",time:"day",ground:"green",seed:73,color:"#2f7d4f"}],["Автомобили МАЗ","Перевозка удобрений и грузов",{machine:"truck",load:"bags",time:"day",ground:"stubble",seed:74,mx:420,my:440,scale:1.1}],["Склады","Хранение минеральных удобрений",{machine:"bags",time:"day",ground:"limed",building:"hangar",bx:380,mx:60,my:450,scale:1,seed:75}]];
+
+P.about=()=>{
+ const leaders=getLeaders();
+ const c=getContacts();
+ return page(t("about","О предприятии"),t("company","Предприятие"),"company",
+ `${img("about-office",{time:"morning",ground:"green",building:"office",bx:300,seed:21},"Административное здание предприятия","")}
+ <p>Коммунальное унитарное предприятие «Кобринхимсервис» выполняет агрохимическое обслуживание сельскохозяйственных организаций Кобринского района: вносит минеральные удобрения, известкует кислые почвы, защищает посевы, выполняет механизированные работы и грузоперевозки, реализует удобрения и средства защиты растений.</p>
+ <p>Предприятие располагает собственным парком техники, ремонтной базой и складами минеральных удобрений в Кобрине.</p>
+ <h2>Структура</h2><ul><li>Администрация и бухгалтерия</li><li>Агрохимическая служба</li><li>Механизированный отряд</li><li>Автотранспортный участок</li><li>Склад минеральных удобрений</li><li>Ремонтная мастерская</li></ul>
+ <h2>${t("fleet","Техника и склады")}</h2><div class="fleet">${FLEET.map((f,i)=>`<div class="card">${img("fleet-"+i,f[2],f[0])}<div class="body"><b>${f[0]}</b><p style="font-size:.88rem;color:var(--muted)">${f[1]}</p></div></div>`).join("")}</div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-top:24px">
+   <h2>${t("leaders","Руководство")}</h2>
+   <a href="#admin" class="btn ghost btn-sm admin-only">✎ Редактировать в CMS</a>
+ </div>
+ <div class="grid g3" style="margin-top:10px">${leaders.map((ldr,i)=>`
+   <div class="card person">${portrait(i)}<div><b>${esc(ldr.name)}</b><br><span style="color:var(--muted)">${esc(ldr.role)}</span><br>${esc(ldr.phone)}</div></div>
+ `).join("")}</div>
+ <h2>Реквизиты</h2><dl class="kv"><dt>Полное наименование</dt><dd>Коммунальное унитарное предприятие «Кобринхимсервис»</dd><dt>УНП</dt><dd>290258679</dd><dt>Юридический адрес</dt><dd>${esc(c.address)}</dd><dt>Вышестоящая организация</dt><dd>Кобринский районный исполнительный комитет</dd></dl>`);
+};
+
+function mapSVG(){return `<svg viewBox="0 0 600 280" role="img" aria-label="Схема проезда"><rect width="600" height="280" fill="#f1f5f9"/><g fill="#e2e8f0">${[0,1,2,3,4].map(i=>`<rect x="${20+i*115}" y="20" width="95" height="60" rx="4"/><rect x="${20+i*115}" y="200" width="95" height="60" rx="4"/>`).join("")}</g><path d="M0 150 C150 140 320 165 600 132" stroke="#fff" stroke-width="22" fill="none"/><path d="M0 150 C150 140 320 165 600 132" stroke="#86efac" stroke-width="2" fill="none" stroke-dasharray="10 8"/><path d="M230 0 L262 280" stroke="#fff" stroke-width="14"/><path d="M450 0 L430 280" stroke="#fff" stroke-width="12"/><text x="24" y="132" font-size="13" fill="#64748b" font-family="Arial">ул. Пролетарская</text><rect x="300" y="84" width="96" height="46" rx="6" fill="#166534"/><text x="348" y="112" font-size="14" text-anchor="middle" fill="#ffffff" font-weight="700" font-family="Arial">183</text><path d="M348 40 c-12 0-20 9-20 20 0 15 20 30 20 30s20-15 20-30c0-11-8-20-20-20z" fill="#dc2626"/><circle cx="348" cy="60" r="7" fill="#fff"/><text x="348" y="180" font-size="12" text-anchor="middle" fill="#0f172a" font-family="Arial" font-weight="600">КУП «Кобринхимсервис»</text></svg>`}
+
+P.contacts=()=>{
+ const c=getContacts();
+ return page(t("contacts","Контакты"),t("company","Предприятие"),"company",
+ `<div style="display:flex;justify-content:space-between;align-items:center">
+   <p style="color:var(--muted)">Телефоны служб предприятия (код 1642):</p>
+   <a href="#admin" class="btn ghost btn-sm admin-only">✎ Изменить контакты в CMS</a>
+  </div>
+  <div class="t-wrap" style="margin-top:10px"><table class="t"><thead><tr><th>Служба</th><th>Телефон</th></tr></thead><tbody>${[
+   ["Приёмная",c.reception],["Директор",c.director],["Факс",c.fax],["Главный бухгалтер",c.accountant],["Юрисконсульт",c.lawyer]
+  ].map(r=>`<tr>${td("Служба",r[0])}${td("Телефон",esc(r[1]),"num")}</tr>`).join("")}</tbody></table></div>
+  <dl class="kv"><dt>${t("address","Адрес")}</dt><dd>${esc(c.address)}</dd><dt>E-mail</dt><dd>${esc(c.email)}</dd><dt>${t("workHours","Режим работы")}</dt><dd>${esc(c.hours)}</dd></dl>
+  <div class="map">${mapSVG()}</div><p><a href="https://yandex.by/maps/?text=Кобрин,%20Пролетарская%20183" target="_blank" rel="noopener">Открыть на карте →</a></p>`);
+};
+
+P.anticor=()=>{
+ const a=getAnticor();
+ return page(t("anticor","Борьба с коррупцией"),t("company","Предприятие"),"company",
+ `<p>На предприятии действует комиссия по противодействию коррупции в соответствии с Типовым положением, утверждённым постановлением Совета Министров Республики Беларусь от 26.12.2011 № 1732.</p>
+  <div class="notice" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+    <div><b>Ближайшее заседание комиссии:</b> ${esc(a.meeting)}</div>
+    <a href="#admin" class="btn ghost btn-sm admin-only">✎ Обновить дату в CMS</a>
+  </div>
+  <h2>Документы</h2><ul>${a.docs.map(d=>`<li>${esc(d)}</li>`).join("")}</ul>
+  <h2>Куда сообщить о фактах коррупции</h2><ul><li>Руководство предприятия: +375 1642 3-50-59</li><li>Прокуратура Кобринского района</li><li>Кобринский районный исполнительный комитет</li><li>Управление по борьбе с экономическими преступлениями УВД Брестского облисполкома</li></ul>`);
+};
+
+P.ideology=()=>page(t("ideology","Идеологическая работа"),t("company","Предприятие"),"company",
+ `<p>Информационно-разъяснительная работа в трудовом коллективе: единые дни информирования, патриотические мероприятия, справочно-методические материалы (подп. 7.5-1 Положения, утв. постановлением Совета Министров № 645).</p>
+ ${banner("#news-n3",icoYear(),"2026 – Год белорусской женщины","Указ Президента Республики Беларусь от 01.01.2026 № 1",false)}
+ <h2>Единые дни информирования</h2><div class="t-wrap"><table class="t"><thead><tr><th>Дата</th><th>Тема</th><th>Материалы</th></tr></thead><tbody>
+ <tr>${td("Дата","15.10.2026","num")}${td("Тема","Тема октября – по материалам облисполкома")}${td("Материалы","Методические материалы, PDF")}</tr>
+ <tr>${td("Дата","17.09.2026","num")}${td("Тема","Тема сентября – по материалам облисполкома")}${td("Материалы","Методические материалы, PDF")}</tr>
+ <tr>${td("Дата","20.08.2026","num")}${td("Тема","Тема августа – по материалам облисполкома")}${td("Материалы","Методические материалы, PDF")}</tr></tbody></table></div>
+ <h2>Государственные символы</h2><p>Государственный флаг, герб и гимн Республики Беларусь, порядок их использования – по Закону «О государственных символах Республики Беларусь».</p>
+ <div style="margin-top:12px">${banner("https://president.gov.by",icoGov(),"Государственный герб Республики Беларусь","Закон от 05.07.2004 № 301-З «О государственных символах Республики Беларусь»")}</div>`);
+
+P.profkom=()=>page(t("profkom","Профком"),t("company","Предприятие"),"company",
+ `<p>Первичная профсоюзная организация предприятия входит в Белорусский профессиональный союз работников агропромышленного комплекса. Профком представляет интересы работников, контролирует выполнение коллективного договора, организует оздоровление и культурные мероприятия.</p>
+ <dl class="kv"><dt>Председатель профкома</dt><dd>ФИО публикуется при наполнении</dd><dt>Коллективный договор</dt><dd>на 2026–2028 годы</dd></dl>
+ <h2>Мероприятия</h2><div class="grid g3">${allNews().filter(n=>n.tag==="Профком").map(x=>newsCard(x,false)).join("")}<div class="card"><h3>Оздоровление</h3><p style="color:var(--muted);font-size:.92rem">Путёвки в санатории для работников и детские лагеря летом.</p></div><div class="card"><h3>Спорт</h3><p style="color:var(--muted);font-size:.92rem">Районная спартакиада трудовых коллективов агропромышленного комплекса.</p></div></div>`);
+
+P.vacancies=()=>{
+ const vacs=getVacancies();
+ const isAdmin=viewMode==="admin";
+ return page(t("vacancies","Вакансии"),t("company","Предприятие"),"company",
+ `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:10px">
+   <p style="color:var(--muted);margin:0">Открытые вакансии на предприятии (подп. 7.5 Положения № 645):</p>
+   <a href="#admin" class="btn ghost btn-sm admin-only">⚙️ Добавить / убрать вакансию (CMS)</a>
+  </div>
+  <div class="fleet">${vacs.map((x,i)=>`<div class="card" style="position:relative">
+   ${isAdmin?`<button type="button" class="card-quick-del quick-del-vac admin-only" data-id="${x.id}" title="Удалить вакансию">🗑 Удалить</button>`:""}
+   ${img("vac-"+x.id,x.scene||{machine:"tractor",time:"morning",ground:"green",seed:41},x.title)}
+   <div class="body"><b>${esc(x.title)}</b><p style="color:var(--muted);font-size:.88rem">${esc(x.req)}</p><p style="font-weight:700;margin-top:6px;color:var(--field-2)">${esc(x.salary)}</p></div>
+  </div>`).join("")}</div>
+ <h2>Мы предлагаем</h2><ul><li>Официальное трудоустройство и стабильную заработную плату</li><li>Социальный пакет по коллективному договору</li><li>Работу на исправной технике</li></ul>
+ <p>Резюме принимаются в отделе кадров лично или по телефону приёмной +375 1642 6-26-72. Вакансии также размещаются на <a href="https://gsz.gov.by" target="_blank" rel="noopener">Общереспубликанском банке вакансий gsz.gov.by</a>.</p>`);
+};
+
+P.appeals=()=>{
+ const leaders=getLeaders();
+ return page(t("appeals","Обращения граждан и юридических лиц"),t("info","Информация"),"info",
+ `<h2>Электронные обращения</h2><p>С 2 января 2023 года электронные обращения в государственные организации подаются только через государственную единую (интегрированную) информационную систему учёта и обработки обращений граждан и юридических лиц (Закон Республики Беларусь от 18.07.2011 № 300-З «Об обращениях граждан и юридических лиц»).</p>
+ <div style="margin:14px 0">${banner("https://обращения.бел",icoAppeals(),"обращения.бел","Государственная единая система электронных обращений")}</div>
+ <h2>Письменные и устные обращения</h2><ul><li>Почтой: 225306, г. Кобрин, ул. Пролетарская, 183</li><li>Лично в приёмной: Пн–Пт 8:00–17:00</li><li>Обращения рассматриваются не позднее 15 дней, а требующие дополнительного изучения – не позднее одного месяца</li></ul>
+ <h2>Личный приём</h2><div class="t-wrap"><table class="t"><thead><tr><th>Должность</th><th>ФИО</th><th>День и время</th><th>Запись</th></tr></thead><tbody>
+ ${leaders.map(l=>`<tr>${td("Должность",esc(l.role))}${td("ФИО",esc(l.name))}${td("Время",esc(l.reception),"num")}${td("Запись",esc(l.phone),"num")}</tr>`).join("")}
+ </tbody></table></div>
+ <h2>«Горячая линия» и «прямая линия»</h2><p>Телефон «горячей линии»: +375 1642 6-26-72 (в рабочее время). Ближайшая «прямая телефонная линия» с директором – 7 ноября 2026 года, 9:00–12:00.</p>
+ <h2>Книга замечаний и предложений</h2><p>Находится в приёмной предприятия и выдаётся по первому требованию.</p>
+ <h2>Вышестоящая организация</h2><p>Кобринский районный исполнительный комитет – вышестоящий государственный орган.</p>
+ <div style="margin-top:12px">${banner("https://kobrin.brest-region.gov.by",icoKobrin(),"Кобринский районный исполнительный комитет","Официальный интернет-портал kobrin.brest-region.gov.by")}</div>`);
+};
+
+P.adminproc=()=>{const rows=[["2.1","Выдача выписки (копии) из трудовой книжки","заявление","бесплатно","5 дней со дня обращения","бессрочно"],["2.2","Выдача справки о месте работы, службы и занимаемой должности","–","бесплатно","5 дней со дня обращения","бессрочно"],["2.3","Выдача справки о периоде работы, службы","–","бесплатно","3 дня со дня обращения","бессрочно"],["2.4","Выдача справки о размере заработной платы (денежного довольствия)","–","бесплатно","5 дней со дня обращения","бессрочно"]];
+ const L=["№ по перечню","Процедура","Документы","Плата","Срок","Срок действия"];
+ return page(t("adminproc","Административные процедуры"),t("info","Информация"),"info",
+ `<p>Административные процедуры, осуществляемые предприятием по заявлениям граждан в соответствии с Указом Президента Республики Беларусь от 26.04.2010 № 200, со сведениями по п. 7.3 Положения, утв. постановлением Совета Министров № 645.</p>
+ <div class="t-wrap"><table class="t"><thead><tr>${L.map(l=>`<th>${l}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map((c,i)=>td(L[i],c,i===0?"num":"")).join("")}</tr>`).join("")}</tbody></table></div>
+ <dl class="kv"><dt>Приём заявлений</dt><dd>отдел кадров, Пн–Пт 8:00–17:00</dd><dt>Телефон</dt><dd>+375 1642 6-26-72</dd><dt>Вышестоящий орган</dt><dd>Кобринский районный исполнительный комитет</dd></dl>`)};
+
+P.privacy=()=>page(t("privacy","Политика обработки персональных данных"),null,"company",
+ `<p>Политика разработана в соответствии с Законом Республики Беларусь от 07.05.2021 № 99-З «О защите персональных данных» и размещена до начала обработки данных.</p><ul><li>Оператор: КУП «Кобринхимсервис», УНП 290258679</li><li>Сайт не принимает электронные обращения и не хранит персональные данные посетителей</li><li>Обязательные cookie обеспечивают работу сайта; аналитические включаются только с согласия посетителя</li><li>Статистика посещаемости хранится на серверах в Республике Беларусь</li></ul>`);
+
+const SITEMAP=[["home","Главная"],["services","Услуги"],...DEFAULT_SERVICES.map(s=>["svc-"+s.id,"– "+s.ru]),["order","Заявка на работы"],["news","Новости"],...COMPANY,...INFO,["privacy","Политика обработки персональных данных"],["admin","Панель управления (CMS)"]];
+P.sitemap=()=>page(t("sitemap","Карта сайта"),null,"company",`<ul>${SITEMAP.map(l=>`<li><a href="#${l[0]}">${t(l[0],l[1])}</a></li>`).join("")}</ul>`);
+
+P.search=()=>{const q=(document.getElementById("q").value||"").trim().toLowerCase();const hits=[];
+ getServices().forEach(s=>{if((s.ru+" "+s.short+" "+(s.long||[]).join(" ")).toLowerCase().includes(q))hits.push(["svc-"+s.id,s.ru,"Услуги"])});
+ allNews().forEach(n=>{if((n.ru+" "+(n.lead||"")+" "+(n.body||[]).join(" ")).toLowerCase().includes(q))hits.push(["news-"+n.id,n.ru,"Новости"])});
+ [["anticor","Борьба с коррупцией","коррупция комиссия"],["appeals","Обращения граждан","обращения.бел приём жалоба"],["adminproc","Административные процедуры","справка трудовая книжка"],["vacancies","Вакансии","работа водитель тракторист агроном"],["contacts","Контакты","телефон адрес факс"],["admin","Панель управления","админка cms управление контентом"]].forEach(x=>{if((x[1]+" "+x[2]).toLowerCase().includes(q))hits.push([x[0],x[1],"Разделы"])});
+ return crumbs("Поиск")+`<h1>Поиск: «${esc(q)}»</h1><div class="grid" style="margin-top:16px">${hits.length&&q?hits.map(h=>`<a class="card" href="#${h[0]}" style="text-decoration:none;color:var(--ink)"><span class="tag">${h[2]}</span><b>${esc(h[1])}</b></a>`).join(""):`<p>Ничего не найдено. Попробуйте «известкование», «вакансии» или «обращения».</p>`}</div>`};
+
+/* ---------- COMPLIANCE CHECKLIST ---------- */
+const CHECK=[["Русская и белорусская версии (п. 7-2)","home"],["Версия для слабовидящих (п. 6)","home"],["Адаптивная вёрстка: компьютер, планшет, телефон","home"],["Панель управления (CMS) для самостоятельного наполнения","admin"],["Ссылки на president.gov.by, pravo.by, вышестоящую организацию (п. 10)","home"],["Руководство: ФИО, должность, телефон, фото (п. 7.1)","about"],["Контакты, режим работы, реквизиты (п. 7.1)","contacts"],["Порядок обращений, личный приём, обращения.бел (п. 7.2)","appeals"],["Административные процедуры: документы, срок, плата (п. 7.3)","adminproc"],["Ссылка на rating.gov.by (п. 7.3-1)","home"],["Перечень услуг и тарифы (п. 7.4)","services"],["Новости с датами, CMS для обновления 2 раза в неделю (п. 5, 7.5)","news"],["Идеологическая работа, ЕДИ (п. 7.5-1)","ideology"],["Антикоррупция: заседание за 5 рабочих дней","anticor"],["Политика ПД и cookie, согласие (Закон № 99-З)","privacy"],["Поиск, карта сайта, единый дизайн (п. 6)","sitemap"],["Хостинг в РБ у поставщика из перечня ОАЦ (Указ № 60)",null],["Без форм с ПД – аттестат 3-ин не требуется",null]];
+
+/* ---------- CMS / ADMIN PANEL ---------- */
+let adminTab=store.get("adm_tab","news");
+let editNewsId=null;
+let editSvcId=null;
+
+P.admin=()=>{
+ const news=allNews();
+ const svcs=getServices();
+ const vacs=getVacancies();
+ const leaders=getLeaders();
+ const anticor=getAnticor();
+ const contacts=getContacts();
+
+ const tabs=[
+  ["news",`📰 Новости (${news.length})`],
+  ["services",`🚜 Услуги и цены (${svcs.length})`],
+  ["vacancies",`👥 Вакансии (${vacs.length})`],
+  ["leaders","🏛 Руководство и приём"],
+  ["anticor","⚖️ Антикоррупция"],
+  ["contacts","📞 Контакты"],
+  ["help","⚖️ Законодательство и Пост. №645"]
+ ];
+
+ let content="";
+
+ if(adminTab==="news"){
+  const editItem=editNewsId?news.find(n=>n.id===editNewsId):null;
+  content=`
+   <div class="admin-tip">
+     <b>💡 Требование Положения № 645 (подп. 7.5):</b> сайт государственного предприятия обязан обновляться <b>не реже 2 раз в неделю</b>.
+     Здесь вы можете за 1 минуту опубликовать свежую заметку или удалить устаревшую публикацию в один клик.
+   </div>
+   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:10px;flex-wrap:wrap">
+     <h3>Список публикаций на сайте (${news.length})</h3>
+     <button type="button" class="btn" id="adm-news-add-btn">${editNewsId?"Отменить редактирование":"+ Добавить публикацию"}</button>
+   </div>
+
+   <div id="adm-news-form-slot" class="admin-form-box" ${editNewsId?"":'style="display:none"'}>
+     <form id="adm-news-form">
+       <h4 style="margin:0 0 12px;color:var(--field-2)">${editNewsId?"✎ Редактирование публикации":"+ Новая публикация на сайте"}</h4>
+       <div class="form-grid">
+         <label class="field" style="grid-column:1/-1">Заголовок публикации *<input id="an-title" required value="${editItem?esc(editItem.ru):""}"></label>
+         <label class="field">Дата публикации *<input id="an-date" type="date" required value="${editItem?editItem.d:new Date().toISOString().slice(0,10)}"></label>
+         <label class="field">Рубрика *<select id="an-tag">
+           ${["Производство","Идеологическая работа","Профком","Кадры","Антикоррупция"].map(x=>`<option${editItem&&editItem.tag===x?" selected":""}>${x}</option>`).join("")}
+         </select></label>
+         <label class="field" style="grid-column:1/-1">Краткий анонс (отображается на главной странице) *<textarea id="an-lead" rows="2" required>${editItem?esc(editItem.lead||""):""}</textarea></label>
+         <label class="field" style="grid-column:1/-1">Полный текст новости (абзацы)<textarea id="an-body" rows="4">${editItem&&editItem.body?esc(editItem.body.join("\n\n")):""}</textarea></label>
+         <label class="field" style="grid-column:1/-1">Тематическая иллюстрация<select id="an-img">
+           <option value="spreader">Разбрасыватель удобрений в поле</option>
+           <option value="lime">Известкование почвы (доломитовая мука)</option>
+           <option value="sprayer">Химическая защита растений (опрыскиватель)</option>
+           <option value="truck">Грузовой автомобиль МАЗ</option>
+           <option value="tractor">Трактор «Беларус»</option>
+           <option value="bags">Склад минеральных удобрений</option>
+           <option value="none">Без иллюстрации</option>
+         </select></label>
+       </div>
+       <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
+         <button type="submit" class="btn">${editNewsId?"Сохранить изменения":"Опубликовать на сайте"}</button>
+         <button type="button" class="btn ghost" id="an-cancel">Отмена</button>
+       </div>
+     </form>
+   </div>
+
+   <div class="admin-grid">
+     ${news.map(n=>`
+       <div class="admin-row">
+         <div style="flex:1;min-width:240px">
+           <div style="display:flex;gap:8px;align-items:center;margin-bottom:4px">
+             <span class="admin-badge">${fmt(n.d)}</span>
+             <span class="tag">${esc(n.tag||"Новости")}</span>
+           </div>
+           <b style="font-size:1.02rem;color:var(--ink)">${esc(n.ru)}</b>
+           <p style="font-size:.85rem;color:var(--muted);margin-top:3px">${esc(n.lead||"")}</p>
+         </div>
+         <div class="admin-actions-cell">
+           <button type="button" class="btn ghost btn-sm adm-news-edit" data-id="${n.id}">✎ Редактировать</button>
+           <button type="button" class="btn btn-danger btn-sm adm-news-del" data-id="${n.id}">🗑 Удалить</button>
+         </div>
+       </div>
+     `).join("")}
+   </div>
+  `;
+ } else if(adminTab==="services"){
+  const editItem=editSvcId?svcs.find(s=>s.id===editSvcId):null;
+  content=`
+   <div class="admin-tip">
+     <b>💡 Подпункт 7.4 Положения № 645:</b> на сайте государственного предприятия должен размещаться перечень оказываемых услуг и действующие тарифы.
+     Изменение цены здесь моментально обновляет прейскурант на сайте и в конструкторе заявок.
+   </div>
+   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:10px;flex-wrap:wrap">
+     <h3>Услуги и действующий прейскурант (${svcs.length})</h3>
+     <button type="button" class="btn" id="adm-svc-add-btn">${editSvcId?"Отменить редактирование":"+ Добавить услугу"}</button>
+   </div>
+
+   <div id="adm-svc-form-slot" class="admin-form-box" ${editSvcId?"":'style="display:none"'}>
+     <form id="adm-svc-form">
+       <h4 style="margin:0 0 12px;color:var(--field-2)">${editSvcId?"✎ Изменение услуги и тарифа":"+ Добавление новой услуги"}</h4>
+       <div class="form-grid">
+         <label class="field" style="grid-column:1/-1">Наименование услуги (русский) *<input id="as-ru" required value="${editItem?esc(editItem.ru):""}"></label>
+         <label class="field" style="grid-column:1/-1">Наименование услуги (белорусский)<input id="as-by" value="${editItem?esc(editItem.by||""):""}"></label>
+         <label class="field">Тариф / стоимость (например: 24,50 BYN или «по прейскуранту») *<input id="as-price" required value="${editItem?esc(editItem.price||"по прейскуранту"):"по прейскуранту"}"></label>
+         <label class="field">Единица расчёта *<input id="as-unit" required value="${editItem?esc(editItem.unit):"га"}"></label>
+         <label class="field">Сезонность<input id="as-season" value="${editItem?esc(editItem.season):"по заявке"}"></label>
+         <label class="field">Иллюстрация<select id="as-img">
+           <option value="spreader">Разбрасыватель удобрений</option>
+           <option value="lime">Известкование</option>
+           <option value="sprayer">Опрыскиватель</option>
+           <option value="plow">Вспашка / почвообработка</option>
+           <option value="truck">Грузовой МАЗ</option>
+           <option value="tractor">Трактор «Беларус»</option>
+           <option value="bags">Склады удобрений</option>
+         </select></label>
+         <label class="field" style="grid-column:1/-1">Краткое описание *<textarea id="as-short" rows="2" required>${editItem?esc(editItem.short):""}</textarea></label>
+       </div>
+       <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
+         <button type="submit" class="btn">${editSvcId?"Сохранить изменения":"Добавить в каталог"}</button>
+         <button type="button" class="btn ghost" id="as-cancel">Отмена</button>
+       </div>
+     </form>
+   </div>
+
+   <div class="admin-grid">
+     ${svcs.map(s=>`
+       <div class="admin-row">
+         <div style="flex:1;min-width:240px">
+           <div style="display:flex;gap:8px;align-items:center;margin-bottom:4px">
+             <span class="admin-badge">${esc(s.price||"по прейскуранту")}</span>
+             <span class="tag">Единица: ${esc(s.unit)}</span>
+             <span class="tag">${esc(s.season)}</span>
+           </div>
+           <b style="font-size:1.02rem">${esc(s.ru)}</b>
+           <p style="font-size:.85rem;color:var(--muted);margin-top:3px">${esc(s.short)}</p>
+         </div>
+         <div class="admin-actions-cell">
+           <button type="button" class="btn ghost btn-sm adm-svc-edit" data-id="${s.id}">✎ Тариф / Текст</button>
+           <button type="button" class="btn btn-danger btn-sm adm-svc-del" data-id="${s.id}">🗑 Удалить</button>
+         </div>
+       </div>
+     `).join("")}
+   </div>
+  `;
+ } else if(adminTab==="vacancies"){
+  content=`
+   <div class="admin-tip">
+     <b>💡 Раздел «Вакансии» (подп. 7.5 Положения № 645):</b> при появлении вакансий добавляйте их здесь. Как только работник найден – нажмите «Удалить», и вакансия сразу исчезнет с сайта.
+   </div>
+   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:10px;flex-wrap:wrap">
+     <h3>Текущие открытые вакансии (${vacs.length})</h3>
+     <button type="button" class="btn" id="adm-vac-add-btn">+ Добавить вакансию</button>
+   </div>
+
+   <div id="adm-vac-form-slot" class="admin-form-box" style="display:none">
+     <form id="adm-vac-form">
+       <h4 style="margin:0 0 12px;color:var(--field-2)">+ Новая открытая вакансия</h4>
+       <div class="form-grid">
+         <label class="field" style="grid-column:1/-1">Должность / специальность *<input id="av-title" required placeholder="например: Тракторист-машинист"></label>
+         <label class="field">Заработная плата *<input id="av-sal" required placeholder="например: от 1 900 BYN"></label>
+         <label class="field">Иллюстрация<select id="av-img">
+           <option value="tractor">Трактор «Беларус»</option>
+           <option value="truck">Автомобиль МАЗ</option>
+           <option value="spreader">Агрономическая техника</option>
+         </select></label>
+         <label class="field" style="grid-column:1/-1">Требования к кандидату *<input id="av-req" required placeholder="например: Категории A, B, D, E · опыт от 1 года"></label>
+       </div>
+       <div style="display:flex;gap:10px;margin-top:14px">
+         <button type="submit" class="btn">Опубликовать вакансию</button>
+         <button type="button" class="btn ghost" id="av-cancel">Отмена</button>
+       </div>
+     </form>
+   </div>
+
+   <div class="admin-grid">
+     ${vacs.map(v=>`
+       <div class="admin-row">
+         <div style="flex:1;min-width:240px">
+           <div style="display:flex;gap:8px;align-items:center;margin-bottom:4px">
+             <span class="admin-badge" style="background:#d9f0df;color:#185a2b">${esc(v.salary)}</span>
+           </div>
+           <b style="font-size:1.02rem">${esc(v.title)}</b>
+           <p style="font-size:.85rem;color:var(--muted);margin-top:2px">${esc(v.req)}</p>
+         </div>
+         <div class="admin-actions-cell">
+           <button type="button" class="btn btn-danger btn-sm adm-vac-del" data-id="${v.id}">🗑 Закрыть / Удалить</button>
+         </div>
+       </div>
+     `).join("")}
+   </div>
+  `;
+ } else if(adminTab==="leaders"){
+  content=`
+   <div class="admin-tip">
+     <b>💡 Подпункты 7.1 и 7.2 Положения № 645:</b> на сайте государственного предприятия обязательно публикуются сведения о руководителе и заместителях, их контактные телефоны и график личного приёма граждан.
+   </div>
+   <form id="adm-leaders-form" class="admin-card">
+     <h3>Сведения о руководстве и график приёма</h3>
+     ${leaders.map((ldr,idx)=>`
+       <div style="border:1px solid var(--line);border-radius:10px;padding:14px;margin-top:12px;background:var(--surface-2)">
+         <b>${esc(ldr.role)}</b>
+         <div class="form-grid" style="margin-top:10px">
+           <label class="field">ФИО *<input id="ldr-name-${idx}" required value="${esc(ldr.name)}"></label>
+           <label class="field">Контактный телефон *<input id="ldr-phone-${idx}" required value="${esc(ldr.phone)}"></label>
+           <label class="field" style="grid-column:1/-1">Дни и часы личного приёма граждан *<input id="ldr-rec-${idx}" required value="${esc(ldr.reception)}"></label>
+         </div>
+       </div>
+     `).join("")}
+     <button type="submit" class="btn" style="margin-top:16px">Сохранить данные руководства</button>
+   </form>
+  `;
+ } else if(adminTab==="anticor"){
+  content=`
+   <div class="admin-tip">
+     <b>⚖️ ВНИМАНИЕ (Постановление Совмина № 1732):</b>
+     Информация о дате, времени и месте проведения заседания комиссии по противодействию коррупции ОБЯЗАТЕЛЬНО размещается на сайте <b>не позднее чем за 5 рабочих дней</b> до дня заседания!
+   </div>
+   <form id="adm-anticor-form" class="admin-card">
+     <h3>Заседание комиссии по противодействию коррупции</h3>
+     <label class="field" style="margin-top:12px">
+       Дата, время и место проведения ближайшего заседания комиссии *
+       <input id="aa-meeting" required value="${esc(anticor.meeting)}">
+     </label>
+     <p style="font-size:.82rem;color:var(--muted);margin-top:4px">Этот текст отображается в специальной рамке в разделе «Борьба с коррупцией».</p>
+     <button type="submit" class="btn" style="margin-top:14px">Сохранить дату заседания</button>
+   </form>
+  `;
+ } else if(adminTab==="contacts"){
+  content=`
+   <div class="admin-tip">
+     <b>💡 Подпункт 7.1 Положения № 645:</b> официальные реквизиты, телефоны служб и режим работы предприятия. Изменения сразу отображаются в шапке, подвале и на странице контактов.
+   </div>
+   <form id="adm-contacts-form" class="admin-card">
+     <h3>Контакты и режим работы</h3>
+     <div class="form-grid" style="margin-top:12px">
+       <label class="field" style="grid-column:1/-1">Адрес предприятия *<input id="ac-address" required value="${esc(contacts.address)}"></label>
+       <label class="field">Режим работы *<input id="ac-hours" required value="${esc(contacts.hours)}"></label>
+       <label class="field">E-mail *<input id="ac-email" type="email" required value="${esc(contacts.email)}"></label>
+       <label class="field">Телефон приёмной *<input id="ac-reception" required value="${esc(contacts.reception)}"></label>
+       <label class="field">Телефон директора<input id="ac-director" value="${esc(contacts.director)}"></label>
+       <label class="field">Факс<input id="ac-fax" value="${esc(contacts.fax)}"></label>
+       <label class="field">Главный бухгалтер<input id="ac-acc" value="${esc(contacts.accountant)}"></label>
+       <label class="field">Юрисконсульт<input id="ac-law" value="${esc(contacts.lawyer)}"></label>
+     </div>
+     <button type="submit" class="btn" style="margin-top:16px">Сохранить контактные данные</button>
+   </form>
+  `;
+ } else if(adminTab==="help"){
+  content=`
+   <div class="admin-card">
+     <h3>Памятка администратора государственного сайта (РБ)</h3>
+     <p style="color:var(--muted);margin-top:6px">Краткое руководство по соблюдению требований законодательства Республики Беларусь:</p>
+     <div class="grid" style="margin-top:16px;gap:14px">
+       <div style="background:var(--surface-2);border-radius:10px;padding:14px;border-left:4px solid var(--field)">
+         <b style="color:var(--field-2)">1. Регулярность обновления сайта</b>
+         <p style="font-size:.88rem;margin-top:4px">Положение № 645 требует обновлять сайт <b>не реже двух раз в неделю</b>. Публикуйте сводки о полевых работах, ремонте техники, заседаниях профкома или материалы ЕДИ.</p>
+       </div>
+       <div style="background:var(--surface-2);border-radius:10px;padding:14px;border-left:4px solid var(--field)">
+         <b style="color:var(--field-2)">2. Антикоррупционные заседания (правило 5 рабочих дней)</b>
+         <p style="font-size:.88rem;margin-top:4px">По Постановлению № 1732 объявление о заседании комиссии публикуется <b>не позднее чем за 5 рабочих дней</b>. Несоблюдение фиксируется контролирующими органами как нарушение.</p>
+       </div>
+       <div style="background:var(--surface-2);border-radius:10px;padding:14px;border-left:4px solid var(--field)">
+         <b style="color:var(--field-2)">3. Электронные обращения граждан и юрлиц</b>
+         <p style="font-size:.88rem;margin-top:4px">С 02.01.2023 года (Закон № 300-З) обращения подаются <b>только через единую систему «обращения.бел»</b>. Свои веб-формы обращений делать запрещено.</p>
+       </div>
+       <div style="background:var(--surface-2);border-radius:10px;padding:14px;border-left:4px solid var(--field)">
+         <b style="color:var(--field-2)">4. Защита персональных данных (Закон № 99-З) и аттестация ОАЦ</b>
+         <p style="font-size:.88rem;margin-top:4px">На сайте не собираются персональные данные и нет личных кабинетов. Поэтому <b>аттестат класса 3-ин не требуется</b>, что экономит бюджет предприятия.</p>
+       </div>
+     </div>
+   </div>
+
+   <div class="admin-card">
+     <h3>Карта соответствия требованиям Положения № 645 и Указа № 60</h3>
+     <p style="color:var(--muted);margin-top:6px">Контрольный чек-лист готовности интернет-сайта предприятия к проверкам контролирующих органов (18/18 пунктов соблюдено):</p>
+     <div style="margin-top:16px;border:1px solid var(--line);border-radius:10px;overflow:hidden">
+       <table class="t" style="margin:0">
+         <thead>
+           <tr>
+             <th style="width:40px;text-align:center">Статус</th>
+             <th>Требование нормативного акта</th>
+             <th style="width:140px">Раздел на сайте</th>
+           </tr>
+         </thead>
+         <tbody>
+           ${CHECK.map(c=>`
+             <tr>
+               <td style="color:#16a34a;font-weight:700;font-size:1.1rem;text-align:center">✓</td>
+               <td><b>${esc(c[0])}</b></td>
+               <td>${c[1]?`<a href="#${c[1]}" class="btn btn-sm ghost" style="padding:.25em .65em;min-height:30px">Перейти</a>`:`<span class="tag">При запуске</span>`}</td>
+             </tr>
+           `).join("")}
+         </tbody>
+       </table>
+     </div>
+   </div>
+  `;
+ }
+
+ return `
+  <div class="fade" style="padding-top:10px">
+    <div class="admin-header">
+      <div>
+        <span class="eyebrow" style="color:var(--field-2)">nestudio CMS · Простое управление контентом</span>
+        <h1 style="margin:4px 0">Панель управления сайтом</h1>
+        <p style="font-size:.9rem;color:var(--muted);max-width:70ch">
+          Система управления интернет-сайтом КУП «Кобринхимсервис». Не требует навыков программирования: выберите раздел, добавьте или удалите материал в 1 клик.
+        </p>
+        <span style="font-size:.8rem;color:var(--field-2);font-weight:600;display:inline-block;margin-top:4px">
+          🔒 Режим демонстрации CMS (без пароля). На боевом сервере вход настраивается только со статических IP предприятия по требованиям ОАЦ.
+        </span>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+        <a href="#home" class="btn wheat">👁 Вернуться на сайт</a>
+        <button type="button" class="btn ghost" id="adm-reset-btn" title="Сбросить все тестовые изменения к исходному образцу">↺ Сбросить к образцу</button>
+      </div>
+    </div>
+
+    <div class="admin-tabs" role="tablist">
+      ${tabs.map(tb=>`
+        <button type="button" class="admin-tab-btn${adminTab===tb[0]?" active":""}" data-tab="${tb[0]}" role="tab">
+          ${tb[1]}
+        </button>
+      `).join("")}
+    </div>
+
+    <div id="adm-tab-content">
+      ${content}
+    </div>
+  </div>
+ `;
+};
+
+/* ---------- CMS EVENT BINDINGS ---------- */
+function bindAdmin(){
+ const contentBox=document.getElementById("adm-tab-content");
+ if(!contentBox)return;
+
+ // Reset button
+ const rst=document.getElementById("adm-reset-btn");
+ if(rst)rst.addEventListener("click",()=>{
+   if(confirm("Сбросить все добавленные или отредактированные данные к первоначальному образцу?")){
+     resetAllData();
+   }
+ });
+
+ // Tab switching
+ document.querySelectorAll(".admin-tab-btn").forEach(btn=>{
+   btn.addEventListener("click",e=>{
+     adminTab=e.currentTarget.dataset.tab;
+     store.set("adm_tab",adminTab);
+     editNewsId=null;
+     editSvcId=null;
+     render();
+   });
+ });
+
+ // News tab actions
+ if(adminTab==="news"){
+   const addBtn=document.getElementById("adm-news-add-btn");
+   const formSlot=document.getElementById("adm-news-form-slot");
+   if(addBtn&&formSlot){
+     addBtn.addEventListener("click",()=>{
+       if(editNewsId){editNewsId=null;render();return;}
+       formSlot.style.display=formSlot.style.display==="none"?"block":"none";
+     });
+   }
+   const cancelBtn=document.getElementById("an-cancel");
+   if(cancelBtn){
+     cancelBtn.addEventListener("click",()=>{editNewsId=null;render();});
+   }
+
+   const form=document.getElementById("adm-news-form");
+   if(form){
+     form.addEventListener("submit",e=>{
+       e.preventDefault();
+       const title=document.getElementById("an-title").value.trim();
+       const d=document.getElementById("an-date").value;
+       const tag=document.getElementById("an-tag").value;
+       const lead=document.getElementById("an-lead").value.trim();
+       const bodyText=document.getElementById("an-body").value.trim();
+       const body=bodyText?bodyText.split(/\n\n+/):[lead];
+       const im=document.getElementById("an-img").value;
+
+       let list=getNews().slice();
+       if(editNewsId){
+         list=list.map(n=>{
+           if(n.id===editNewsId){
+             const upd=Object.assign({},n,{d,tag,ru:title,lead,body});
+             if(im!=="none")upd.scene={machine:im,load:"bags",time:"day",ground:"stubble",seed:Date.now()%997};
+             else delete upd.scene;
+             return upd;
+           }
+           return n;
+         });
+         toast("Публикация успешно обновлена!");
+       } else {
+         const newId="n_"+Date.now();
+         const item={id:newId,d,tag,ru:title,lead,body};
+         if(im!=="none")item.scene={machine:im,load:"bags",time:"day",ground:"stubble",seed:Date.now()%997};
+         list.unshift(item);
+         toast("Публикация успешно добавлена на сайт!");
+       }
+       saveNews(list);
+       editNewsId=null;
+       render();
+     });
+   }
+
+   // Edit buttons
+   document.querySelectorAll(".adm-news-edit").forEach(b=>{
+     b.addEventListener("click",()=>{
+       editNewsId=b.dataset.id;
+       render();
+     });
+   });
+
+   // Delete buttons
+   document.querySelectorAll(".adm-news-del").forEach(b=>{
+     b.addEventListener("click",()=>{
+       const id=b.dataset.id;
+       if(confirm("Удалить эту публикацию с сайта?")){
+         saveNews(getNews().filter(x=>x.id!==id));
+         toast("Публикация удалена с сайта");
+         render();
+       }
+     });
+   });
+ }
+
+ // Services tab actions
+ if(adminTab==="services"){
+   const addBtn=document.getElementById("adm-svc-add-btn");
+   const formSlot=document.getElementById("adm-svc-form-slot");
+   if(addBtn&&formSlot){
+     addBtn.addEventListener("click",()=>{
+       if(editSvcId){editSvcId=null;render();return;}
+       formSlot.style.display=formSlot.style.display==="none"?"block":"none";
+     });
+   }
+   const cancelBtn=document.getElementById("as-cancel");
+   if(cancelBtn){
+     cancelBtn.addEventListener("click",()=>{editSvcId=null;render();});
+   }
+
+   const form=document.getElementById("adm-svc-form");
+   if(form){
+     form.addEventListener("submit",e=>{
+       e.preventDefault();
+       const ru=document.getElementById("as-ru").value.trim();
+       const by=document.getElementById("as-by").value.trim()||ru;
+       const price=document.getElementById("as-price").value.trim();
+       const unit=document.getElementById("as-unit").value.trim();
+       const season=document.getElementById("as-season").value.trim();
+       const short=document.getElementById("as-short").value.trim();
+       const im=document.getElementById("as-img").value;
+
+       let list=getServices().slice();
+       if(editSvcId){
+         list=list.map(s=>{
+           if(s.id===editSvcId){
+             return Object.assign({},s,{ru,by,price,unit,season,short});
+           }
+           return s;
+         });
+         toast("Услуга и тариф успешно обновлены!");
+       } else {
+         const id="s_"+Date.now();
+         const item={id,ru,by,price,unit,season,short,long:[short],facts:[["Тариф",price],["Единица",unit]],scene:{machine:im,time:"day",ground:"green",seed:Date.now()%997}};
+         list.push(item);
+         toast("Новая услуга добавлена в каталог!");
+       }
+       saveServices(list);
+       editSvcId=null;
+       render();
+     });
+   }
+
+   document.querySelectorAll(".adm-svc-edit").forEach(b=>{
+     b.addEventListener("click",()=>{
+       editSvcId=b.dataset.id;
+       render();
+     });
+   });
+
+   document.querySelectorAll(".adm-svc-del").forEach(b=>{
+     b.addEventListener("click",()=>{
+       const id=b.dataset.id;
+       if(confirm("Удалить эту услугу из каталога сайта?")){
+         saveServices(getServices().filter(x=>x.id!==id));
+         toast("Услуга удалена из каталога");
+         render();
+       }
+     });
+   });
+ }
+
+ // Vacancies tab actions
+ if(adminTab==="vacancies"){
+   const addBtn=document.getElementById("adm-vac-add-btn");
+   const formSlot=document.getElementById("adm-vac-form-slot");
+   if(addBtn&&formSlot){
+     addBtn.addEventListener("click",()=>{formSlot.style.display=formSlot.style.display==="none"?"block":"none";});
+   }
+   const cancelBtn=document.getElementById("av-cancel");
+   if(cancelBtn){
+     cancelBtn.addEventListener("click",()=>{formSlot.style.display="none";});
+   }
+
+   const form=document.getElementById("adm-vac-form");
+   if(form){
+     form.addEventListener("submit",e=>{
+       e.preventDefault();
+       const title=document.getElementById("av-title").value.trim();
+       const salary=document.getElementById("av-sal").value.trim();
+       const req=document.getElementById("av-req").value.trim();
+       const im=document.getElementById("av-img").value;
+
+       const list=getVacancies().slice();
+       list.push({id:"v_"+Date.now(),title,salary,req,scene:{machine:im,time:"morning",ground:"green",seed:Date.now()%997}});
+       saveVacancies(list);
+       toast("Вакансия успешно опубликована!");
+       render();
+     });
+   }
+
+   document.querySelectorAll(".adm-vac-del").forEach(b=>{
+     b.addEventListener("click",()=>{
+       const id=b.dataset.id;
+       if(confirm("Закрыть и удалить эту вакансию с сайта?")){
+         saveVacancies(getVacancies().filter(x=>x.id!==id));
+         toast("Вакансия удалена с сайта");
+         render();
+       }
+     });
+   });
+ }
+
+ // Leaders tab actions
+ if(adminTab==="leaders"){
+   const form=document.getElementById("adm-leaders-form");
+   if(form){
+     form.addEventListener("submit",e=>{
+       e.preventDefault();
+       const leaders=getLeaders().slice();
+       leaders.forEach((ldr,idx)=>{
+         const nEl=document.getElementById("ldr-name-"+idx);
+         const pEl=document.getElementById("ldr-phone-"+idx);
+         const rEl=document.getElementById("ldr-rec-"+idx);
+         if(nEl)ldr.name=nEl.value.trim();
+         if(pEl)ldr.phone=pEl.value.trim();
+         if(rEl)ldr.reception=rEl.value.trim();
+       });
+       saveLeaders(leaders);
+       toast("Сведения о руководстве успешно сохранены!");
+       render();
+     });
+   }
+ }
+
+ // Anticor tab actions
+ if(adminTab==="anticor"){
+   const form=document.getElementById("adm-anticor-form");
+   if(form){
+     form.addEventListener("submit",e=>{
+       e.preventDefault();
+       const meet=document.getElementById("aa-meeting").value.trim();
+       const a=Object.assign({},getAnticor(),{meeting:meet});
+       saveAnticor(a);
+       toast("Дата заседания антикоррупционной комиссии обновлена!");
+       render();
+     });
+   }
+ }
+
+ // Contacts tab actions
+ if(adminTab==="contacts"){
+   const form=document.getElementById("adm-contacts-form");
+   if(form){
+     form.addEventListener("submit",e=>{
+       e.preventDefault();
+       const c={
+         address:document.getElementById("ac-address").value.trim(),
+         hours:document.getElementById("ac-hours").value.trim(),
+         email:document.getElementById("ac-email").value.trim(),
+         reception:document.getElementById("ac-reception").value.trim(),
+         director:document.getElementById("ac-director").value.trim(),
+         fax:document.getElementById("ac-fax").value.trim(),
+         accountant:document.getElementById("ac-acc").value.trim(),
+         lawyer:document.getElementById("ac-law").value.trim()
+       };
+       saveContacts(c);
+       toast("Контактные данные предприятия сохранены!");
+       render();
+     });
+   }
+ }
+}
+
+/* Quick delete buttons on public news and vacancies pages */
+function bindQuickDeletes(){
+ document.querySelectorAll(".quick-del-news").forEach(btn=>{
+   btn.addEventListener("click",e=>{
+     e.preventDefault();
+     e.stopPropagation();
+     const id=btn.dataset.id;
+     if(confirm("Удалить эту новость с сайта?")){
+       saveNews(getNews().filter(x=>x.id!==id));
+       toast("Новость удалена с сайта");
+       render();
+     }
+   });
+ });
+
+ document.querySelectorAll(".quick-del-vac").forEach(btn=>{
+   btn.addEventListener("click",e=>{
+     e.preventDefault();
+     e.stopPropagation();
+     const id=btn.dataset.id;
+     if(confirm("Закрыть и удалить эту вакансию?")){
+       saveVacancies(getVacancies().filter(x=>x.id!==id));
+       toast("Вакансия удалена");
+       render();
+     }
+   });
+ });
+}
+
+/* ---------- ROUTER ---------- */
+let route="home";
+const GROUP={about:"company",contacts:"company",anticor:"company",ideology:"company",profkom:"company",vacancies:"company",appeals:"info",adminproc:"info",admin:"company"};
+
+function heroHTML(){
+  const isAdmin=viewMode==="admin";
+  return `<section class="hero"><div class="wrap"><div><p class="eyebrow" style="color:#86efac">${t("heroEyebrow","Брестская область · Кобринский район")}</p><h1 style="margin-top:10px">${t("heroTitle","Агрохимическое обслуживание хозяйств Кобринского района")}</h1><p class="lead">${t("heroLead","Внесение минеральных удобрений, известкование кислых почв, химическая защита растений, механизированные работы и перевозки. Собственная техника и склады.")}</p>
+  <div class="ctas"><a class="btn wheat" href="#order">${t("ctaOrder","Составить заявку")}</a><a class="btn ghost" href="#services">${t("ctaServices","Все услуги")}</a>${isAdmin?`<a class="btn ghost admin-only" href="#admin" style="color:#ffffff;border-color:rgba(255,255,255,.4)">⚙️ Панель управления (CMS)</a>`:""}</div>
+  <div class="stats"><div><b>8</b>направлений агросервиса</div><div><b>1 день</b>ответ на заявку</div><div><b>8:00–17:00</b>приём заявок, Пн–Пт</div><div><b>Кобрин</b>собственные склады</div></div></div>
+  <div class="hero-art img" data-photo="hero">${PHOTOS.hero?`<img src="img/hero.jpg" alt="">`:Scenes.scene({machine:"spreader",time:"morning",ground:"plowed",seed:3,alt:"Внесение удобрений в поле"})}<span class="cap">Осеннее внесение удобрений · Кобринский район</span></div></div></section>`}
+
+function render(){
+ let h=(location.hash||"#home").slice(1);route=h;let html;
+ if(h.startsWith("svc-"))html=svcPage(h.slice(4));
+ else if(h.startsWith("news-"))html=newsPage(h.slice(5));
+ else{if(!P[h]){h="home";route=h}html=P[h]()}
+
+ document.getElementById("hero-slot").innerHTML=h==="home"?heroHTML():"";
+ document.getElementById("main").innerHTML=html;
+ document.querySelectorAll("nav.main a[data-r]").forEach(a=>{
+   if(a.dataset.r===h||(h.startsWith("svc-")&&a.dataset.r==="services")||(h.startsWith("news-")&&a.dataset.r==="news"))a.setAttribute("aria-current","page");
+   else a.removeAttribute("aria-current");
+ });
+ document.querySelectorAll(".dd").forEach(d=>{d.classList.toggle("active",GROUP[h]===d.dataset.group);d.classList.remove("open")});
+
+ if(h==="order")bindOrder();
+ if(h==="news")bindNews();
+ if(h==="admin")bindAdmin();
+ bindQuickDeletes();
+
+ document.querySelectorAll("[data-svc]").forEach(a=>a.addEventListener("click",()=>store.set("svc",a.dataset.svc)));
+ buildMenus();applyStatic();closeDrawer();
+ if(h!=="home")window.scrollTo(0,0);
+ try{document.title=(h==="home"?"":document.querySelector("main h1").textContent+" – ")+"КУП «Кобринхимсервис»"}catch(e){}
+}
+
+function buildMenus(){
+ document.getElementById("dd-company").innerHTML=COMPANY.map(l=>`<a href="#${l[0]}" data-r="${l[0]}">${t(l[0],l[1])}</a>`).concat([`<a href="#admin" style="color:var(--field-2)!important;font-weight:700!important">⚙️ Панель управления (CMS)</a>`]).join("");
+ document.getElementById("dd-info").innerHTML=INFO.map(l=>`<a href="#${l[0]}" data-r="${l[0]}">${t(l[0],l[1])}</a>`).join("");
+ const cur=l=>l[0]===route?' aria-current="page"':"";
+ const c=getContacts();
+ document.getElementById("drawer-body").innerHTML=`<a class="top" href="#home">${t("home","Главная")}<span>›</span></a>
+ <details${route.startsWith("svc-")||route==="services"?" open":""}><summary>${t("services","Услуги")}</summary><a href="#services">Все услуги и прейскурант</a>${getServices().map(s=>`<a href="#svc-${s.id}"${cur(["svc-"+s.id])}>${lang==="by"?s.by:s.ru}</a>`).join("")}</details>
+ <a class="top" href="#news">${t("news","Новости")}<span>›</span></a>
+ <details${GROUP[route]==="company"?" open":""}><summary>${t("company","Предприятие")}</summary>${COMPANY.map(l=>`<a href="#${l[0]}"${cur(l)}>${t(l[0],l[1])}</a>`).join("")}</details>
+ <details${GROUP[route]==="info"?" open":""}><summary>${t("info","Информация")}</summary>${INFO.map(l=>`<a href="#${l[0]}"${cur(l)}>${t(l[0],l[1])}</a>`).join("")}</details>
+ <a class="top" href="#order">Заявка на работы<span>›</span></a>
+ <a class="top" href="#admin" style="color:var(--field-2);font-weight:700">⚙️ Панель управления (CMS)<span>›</span></a>
+ <div class="drawer-contacts"><b>Приёмная</b><span>${esc(c.reception)}</span><span>${esc(c.email)}</span><span style="color:var(--muted)">${esc(c.hours)}</span><span style="color:var(--muted)">${esc(c.address)}</span></div>`;
+}
+
+function applyStatic(){
+ const c=getContacts();
+ document.querySelectorAll("[data-i]").forEach(el=>{
+   if(!el.dataset.ru)el.dataset.ru=el.textContent;
+   el.textContent=t(el.dataset.i,el.dataset.ru);
+ });
+ document.getElementById("q").placeholder=lang==="by"?"Пошук па сайце":"Поиск по сайту";
+ document.documentElement.lang=lang==="by"?"be":"ru";
+ const recEl=document.querySelector(".head-contacts b");
+ if(recEl)recEl.textContent=c.reception;
+}
+
+/* ---------- ORDER ---------- */
+function bindOrder(){
+ const ids=["o-svc","o-org","o-area","o-crop","o-date","o-note"],out=document.getElementById("o-out"),v=i=>document.getElementById(i).value;
+ const c=getContacts();
+ const upd=()=>{
+   const s=svcById(v("o-svc"))||getServices()[0];
+   const d=v("o-date");
+   out.textContent=`ЗАЯВКА на выполнение работ\nКУП «Кобринхимсервис», ${c.address}\n\nУслуга: ${s.ru}\nТариф: ${s.price||"по прейскуранту"}\nХозяйство: ${v("o-org")}\nОбъём: ${v("o-area")} (${s.unit})\nКультура / поле: ${v("o-crop")}\nЖелаемые сроки: ${d?fmt(d):"по согласованию"}\nПримечание: ${v("o-note")}\n\nКонтактное лицо и телефон: ____________\nДата: ${new Date().toLocaleDateString("ru-RU")}`;
+ };
+ ids.forEach(i=>{const el=document.getElementById(i);if(el)el.addEventListener("input",upd);});
+ upd();
+ const cpBtn=document.getElementById("o-copy");
+ if(cpBtn){
+   cpBtn.addEventListener("click",()=>{
+     const txt=out.textContent;
+     const p=navigator.clipboard&&navigator.clipboard.writeText?navigator.clipboard.writeText(txt):Promise.reject();
+     p.then(()=>toast("Заявка скопирована"),()=>{const r=document.createRange();r.selectNodeContents(out);const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Текст выделен – скопируйте его");});
+   });
+ }
+}
+
+/* ---------- NEWS QUICK EDITOR ---------- */
+function bindNews(){
+ const openBtn=document.getElementById("ed-open");
+ if(!openBtn)return;
+ openBtn.addEventListener("click",()=>{
+  const slot=document.getElementById("editor-slot");
+  if(slot.innerHTML){slot.innerHTML="";return;}
+  slot.innerHTML=`<form class="editor" id="ed-form" style="margin-bottom:18px"><b>Быстрая публикация новости · CMS</b><label class="field" for="ed-title">Заголовок<input id="ed-title" required value="Завершено известкование в хозяйствах района"></label><label class="field" for="ed-text">Текст<textarea id="ed-text" rows="3">Работы выполнены в установленные сроки собственной техникой предприятия.</textarea></label><div class="form-grid"><label class="field" for="ed-date">Дата<input id="ed-date" type="date" value="${new Date().toISOString().slice(0,10)}"></label><label class="field" for="ed-tag">Рубрика<select id="ed-tag"><option>Производство</option><option>Идеологическая работа</option><option>Профком</option><option>Кадры</option><option>Антикоррупция</option></select></label></div><label class="field" for="ed-img">Иллюстрация<select id="ed-img"><option value="lime">Известкование</option><option value="spreader">Внесение удобрений</option><option value="sprayer">Защита растений</option><option value="truck">Перевозки</option><option value="none">Без иллюстрации</option></select></label><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" type="submit">Опубликовать</button><button class="btn ghost" type="button" id="ed-clear">Закрыть форму</button></div><span style="font-size:.8rem;color:var(--muted)">Публикация мгновенно появляется на сайте.</span></form>`;
+  document.getElementById("ed-form").addEventListener("submit",e=>{
+   e.preventDefault();
+   const g=i=>document.getElementById(i).value;
+   const im=g("ed-img");
+   const n={id:"u"+Date.now(),d:g("ed-date"),ru:g("ed-title").trim()||"Без заголовка",lead:g("ed-text").trim(),body:[g("ed-text").trim()],tag:g("ed-tag")};
+   if(im!=="none")n.scene={machine:im,load:"bags",time:"day",ground:im==="sprayer"?"green":"stubble",seed:Date.now()%997,mx:im==="truck"?420:undefined,my:im==="truck"?440:undefined,scale:im==="truck"?1.1:undefined};
+   const a=getNews().slice();
+   a.unshift(n);
+   saveNews(a);
+   render();
+   toast("Опубликовано");
+  });
+  document.getElementById("ed-clear").addEventListener("click",()=>{slot.innerHTML="";});
+ });
+}
+
+function toast(m){const d=document.createElement("div");d.className="toast";d.setAttribute("role","status");d.textContent=m;document.body.appendChild(d);setTimeout(()=>d.remove(),2200)}
+
+/* ---------- UI LISTENERS ---------- */
+function setLang(l){lang=l;store.set("lang",l);document.getElementById("lang-ru").setAttribute("aria-pressed",l==="ru");document.getElementById("lang-by").setAttribute("aria-pressed",l==="by");render()}
+document.getElementById("lang-ru").addEventListener("click",()=>setLang("ru"));
+document.getElementById("lang-by").addEventListener("click",()=>setLang("by"));
+document.querySelectorAll(".dd>button").forEach(b=>b.addEventListener("click",e=>{e.stopPropagation();const d=b.parentNode,o=!d.classList.contains("open");document.querySelectorAll(".dd").forEach(x=>x.classList.remove("open"));d.classList.toggle("open",o);b.setAttribute("aria-expanded",o)}));
+document.addEventListener("click",()=>document.querySelectorAll(".dd").forEach(x=>x.classList.remove("open")));
+const drawer=document.getElementById("drawer");
+function closeDrawer(){drawer.hidden=true;document.getElementById("m-menu").setAttribute("aria-expanded","false");document.body.style.overflow=""}
+document.getElementById("m-menu").addEventListener("click",()=>{drawer.hidden=false;document.getElementById("m-menu").setAttribute("aria-expanded","true");document.body.style.overflow="hidden"});
+document.getElementById("drawer-x").addEventListener("click",closeDrawer);
+drawer.addEventListener("click",e=>{if(e.target.closest("a"))setTimeout(closeDrawer,0)});
+document.getElementById("m-search").addEventListener("click",()=>{const f=document.getElementById("search-form");f.classList.toggle("open");if(f.classList.contains("open"))document.getElementById("q").focus()});
+document.getElementById("search-form").addEventListener("submit",e=>{e.preventDefault();if(location.hash==="#search")render();else location.hash="search"});
+const rx=document.getElementById("ribbon-x");if(rx)rx.addEventListener("click",()=>{const r=document.getElementById("ribbon");if(r)r.hidden=true});
+
+const root=document.documentElement;let A=store.get("a11y",null);
+function applyA11y(){
+  root.classList.remove("a11y","c-bw","c-wb","c-blue","c-beige","noimg","ls");
+  const p=document.getElementById("a11y-panel");
+  if(A){
+    root.classList.add("a11y",A.c||"c-bw");
+    if(A.noimg)root.classList.add("noimg");
+    if(A.ls)root.classList.add("ls");
+    const fs=A.fs||20;
+    root.style.fontSize=fs+"px";
+    root.style.setProperty("--fs",fs+"px");
+    if(p){
+      p.hidden=false;
+      p.querySelectorAll("[data-fs]").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.fs===fs)));
+      p.querySelectorAll("[data-c]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.c===(A.c||"c-bw"))));
+      const it=document.getElementById("img-toggle");if(it){it.setAttribute("aria-pressed",String(!!A.noimg));it.textContent=A.noimg?"Вкл.":"Выкл."}
+      const lt=document.getElementById("ls-toggle");if(lt)lt.setAttribute("aria-pressed",String(!!A.ls));
+    }
+  } else {
+    root.style.fontSize="";
+    root.style.removeProperty("--fs");
+    if(p)p.hidden=true;
+  }
+  const btn=document.getElementById("a11y-toggle");
+  if(btn)btn.setAttribute("aria-expanded",String(!!A));
+  store.set("a11y",A);
+}
+document.getElementById("a11y-toggle").addEventListener("click",()=>{A=A?null:{fs:20,c:"c-bw",noimg:false,ls:false};applyA11y()});
+document.getElementById("a11y-off").addEventListener("click",()=>{A=null;applyA11y()});
+document.querySelectorAll("[data-fs]").forEach(b=>b.addEventListener("click",()=>{
+  if(!A)A={fs:20,c:"c-bw",noimg:false,ls:false};
+  A.fs=+b.dataset.fs;
+  applyA11y();
+}));
+document.querySelectorAll("[data-c]").forEach(b=>b.addEventListener("click",()=>{
+  if(!A)A={fs:20,c:"c-bw",noimg:false,ls:false};
+  A.c=b.dataset.c;
+  applyA11y();
+}));
+const imgTog=document.getElementById("img-toggle");
+if(imgTog)imgTog.addEventListener("click",()=>{
+  if(!A)A={fs:20,c:"c-bw",noimg:false,ls:false};
+  A.noimg=!A.noimg;
+  applyA11y();
+});
+const lsTog=document.getElementById("ls-toggle");
+if(lsTog)lsTog.addEventListener("click",()=>{
+  if(!A)A={fs:20,c:"c-bw",noimg:false,ls:false};
+  A.ls=!A.ls;
+  applyA11y();
+});
+
+const modeBtn=document.getElementById("mode-toggle-btn");
+if(modeBtn)modeBtn.addEventListener("click",toggleMode);
+
+const dock=document.getElementById("dock-btn");if(dock)dock.addEventListener("click",()=>{const c=document.getElementById("checklist");if(c){c.hidden=!c.hidden;dock.setAttribute("aria-expanded",!c.hidden)}});
+const ck=document.getElementById("cookie");if(!store.get("cookie",null)&&ck)ck.hidden=false;
+const ckAll=document.getElementById("ck-all");if(ckAll)ckAll.addEventListener("click",()=>{store.set("cookie","all");if(ck)ck.hidden=true});
+const ckMin=document.getElementById("ck-min");if(ckMin)ckMin.addEventListener("click",()=>{store.set("cookie","min");if(ck)ck.hidden=true});
+
+window.addEventListener("hashchange",render);
+updateModeUI();
+applyA11y();
+setLang(lang);
+})();
+
+</script>
+
+<script>
+(function() {
+  'use strict';
+  var toastTimer = null;
+  function showToast(msg) {
+    var toast = document.getElementById('nestudio-protect-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'nestudio-protect-toast';
+      toast.innerHTML = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg><span id="nestudio-toast-txt"></span>';
+      document.body.appendChild(toast);
+    }
+    var txt = document.getElementById('nestudio-toast-txt');
+    if (txt) txt.textContent = msg || 'Материалы и демонстрационный код защищены NeStudio. Копирование запрещено.';
+    toast.classList.add('show');
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function() {
+      toast.classList.remove('show');
+    }, 2500);
+  }
+
+  // Intercept context menu
+  document.addEventListener('contextmenu', function(e) {
+    if (e.target && e.target.closest && e.target.closest('input, textarea, select')) return;
+    e.preventDefault();
+    showToast('Контекстное меню отключено. Копирование материалов защищено NeStudio.');
+    return false;
+  }, { capture: true });
+
+  // Intercept hotkeys
+  document.addEventListener('keydown', function(e) {
+    var isInput = e.target && e.target.closest && e.target.closest('input, textarea, select');
+    var key = (e.key || '').toLowerCase();
+    var isCtrl = e.ctrlKey || e.metaKey;
+
+    // F12 or DevTools: Ctrl/Cmd + Shift + I/J/C
+    if (e.key === 'F12' || (isCtrl && e.shiftKey && (key === 'i' || key === 'j' || key === 'c'))) {
+      e.preventDefault();
+      e.stopPropagation();
+      showToast('Исходный код и инспектор защищены авторским правом NeStudio.');
+      return false;
+    }
+
+    // View source (Ctrl+U), Save (Ctrl+S), Print (Ctrl+P)
+    if (isCtrl && (key === 'u' || key === 's' || key === 'p')) {
+      e.preventDefault();
+      e.stopPropagation();
+      showToast('Сохранение и просмотр исходного кода заблокированы.');
+      return false;
+    }
+
+    // Copy, Cut, Select All outside inputs
+    if (!isInput && isCtrl && (key === 'c' || key === 'x' || key === 'a')) {
+      e.preventDefault();
+      e.stopPropagation();
+      showToast('Копирование текстовых и графических материалов запрещено.');
+      return false;
+    }
+  }, { capture: true });
+
+  // Intercept copy / cut / dragstart
+  document.addEventListener('copy', function(e) {
+    if (!e.target.closest('input, textarea, select')) {
+      e.preventDefault();
+      showToast('Копирование материалов сайта защищено NeStudio.');
+    }
+  }, { capture: true });
+
+  document.addEventListener('cut', function(e) {
+    if (!e.target.closest('input, textarea, select')) {
+      e.preventDefault();
+      showToast('Копирование материалов сайта защищено NeStudio.');
+    }
+  }, { capture: true });
+
+  document.addEventListener('dragstart', function(e) {
+    if (!e.target.closest('input, textarea, select')) {
+      e.preventDefault();
+      return false;
+    }
+  }, { capture: true });
+
+  try {
+    console.log(
+      '%cNeStudio Protection System%c
+Все права на дизайн, векторную графику и код принадлежат NeStudio (nestudio.xyz / nestudio.site).
+Несанкционированное заимствование преследуется по закону.',
+      'color: #16a34a; font-weight: bold; font-size: 15px;',
+      'color: #475569; font-size: 12px; line-height: 1.5;'
+    );
+  } catch(err) {}
+})();
+</script>
+
+</body>
+</html>
